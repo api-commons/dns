@@ -1,0 +1,31 @@
+provider: freestyle-sh
+apis_io: https://apis.io/providers/freestyle-sh/
+context: dns
+generated: '2026-11-11'
+concepts:
+  domain:
+    path_segment:
+    - domains
+    properties:
+      id: id
+      created_at: createdAt
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/freestyle-domains-api-openapi.yml#GET /domains/v1/domains
+    - openapi/_original/freestyle-sh-openapi.json#GET /domains
+    - openapi/_original/freestyle-sh-openapi.json#GET /v5/domains
+  dns_record:
+    path_segment:
+    - records
+    properties:
+      name:
+      - name
+      - domain
+      type: kind
+      ttl: ttl
+      priority: priority
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/freestyle-domains-api-openapi.yml#DELETE /dns/v1/records
+    - openapi/_original/freestyle-domains-api-openapi.yml#GET /dns/v1/records
+    - openapi/_original/freestyle-domains-api-openapi.yml#POST /dns/v1/records

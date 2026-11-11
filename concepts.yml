@@ -1,0 +1,57 @@
+context: dns
+name: DNS and Domains
+intro: >-
+  The common DNS vocabulary -- the domains people register, the zones that serve them and the
+  records inside those zones -- distilled from the APIs that already exist.
+tags: [DNS, Domains, Domain Registration, Domain Names, Registrar, Domain Management, Hosting]
+
+envelope: [_links, _pagination, _results, data, success, errors, warnings, count, total, page, meta, links,
+           value, results, next, previous, has_more, message, status_code, ids, next_page, previous_page,
+           page_info, cursor, total_count, per_page, total_pages, current_page, object, url, result, result_info]
+
+common_fields:
+  id: [uuid, guid, object_id, record_id, zone_id, domain_id]
+  created_at: [created, created_date, date_created, create_time, creation_date, created_on, created_time]
+  updated_at: [updated, updated_date, modified_at, last_modified, date_modified, update_time, modified_date, modified, modified_on]
+  metadata: [meta_data, custom_fields, custom, attributes, properties, tags, labels]
+  status: [state, domain_status, zone_status, active, paused]
+  name: [domain, domain_name, fqdn, hostname, host, title]
+
+concepts:
+  domain:
+    segments: [domains, domain, domain_names, registrations, registered_domains]
+    aliases:
+      expires_at: [expiry_date, expiration_date, expires, expires_on, expiration, renewal_date]
+      auto_renew: [autorenew, auto_renewal, renew_auto, is_auto_renew]
+      nameservers: [name_servers, ns, nameserver]
+      registrar: [registrar_name]
+      locked: [is_locked, transfer_lock, registrar_lock, privacy]
+  zone:
+    requires: [dns_record]
+    segments: [zones, zone, dns_zones, dns-zones, dnszones, hosted_zones, hostedzones]
+    aliases:
+      nameservers: [name_servers, ns, name_server_set, delegation_set]
+      type: [zone_type, kind]
+      record_count: [resource_record_set_count, records_count]
+  dns_record:
+    path: /zones/{zone_id}/records
+    segments: [records, record, dns_records, dns-records, dnsrecords, rrsets, recordsets, resource_record_sets, rrset]
+    aliases:
+      type: [record_type, rrtype, rr_type, kind]
+      content: [value, data, rdata, rrdatas, target, address, values, answer, records, resource_records]
+      ttl: [ttl_seconds, time_to_live]
+      priority: [prio, preference, mx_priority]
+      proxied: [proxy, is_proxied]
+
+findings:
+  - "A DNS record agrees on name, type, TTL, priority and id across registrars, DNS hosts and
+    clouds (Cloudflare, Route 53, Google Cloud DNS, Hetzner) -- the record is fixed by the DNS
+    protocol, and the APIs follow it. Its content is the one field named differently everywhere
+    (content, value, rdata, rrdatas, target)."
+  - "A domain agrees on name, id and created_at; expiry, auto-renew and nameservers are each
+    carried by too few registrars to share."
+decisions:
+  - "Records, resource-record sets and DNS records are one concept, published beneath their zone
+    at `/zones/{zone_id}/records`."
+  - "Zones count only at a provider that also exposes records; hosted zones and managed zones are
+    zones."

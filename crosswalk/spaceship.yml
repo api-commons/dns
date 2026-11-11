@@ -1,0 +1,34 @@
+provider: spaceship
+apis_io: https://apis.io/providers/spaceship/
+context: dns
+generated: '2026-11-11'
+concepts:
+  domain:
+    path_segment:
+    - domains
+    properties:
+      name: name
+      status: status
+      expires_at: expirationDate
+      nameservers: nameservers
+      auto_renew: autoRenew
+      description: description
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/spaceship-openapi-original.json#DELETE /v1/domains/{domain}
+    - openapi/_original/spaceship-openapi-original.json#DELETE /v1/sellerhub/domains/{domain}
+    - openapi/_original/spaceship-openapi-original.json#GET /v1/domains
+    - openapi/_original/spaceship-openapi-original.json#GET /v1/domains/{domain}
+    - openapi/_original/spaceship-openapi-original.json#GET /v1/sellerhub/domains
+  dns_record:
+    path_segment:
+    - records
+    properties:
+      name: name
+      type: type
+      ttl: ttl
+    core_coverage: 0.6
+    evidence:
+    - openapi/_original/spaceship-openapi-original.json#DELETE /v1/dns/records/{domain}
+    - openapi/_original/spaceship-openapi-original.json#GET /v1/dns/records/{domain}
+    - openapi/_original/spaceship-openapi-original.json#PUT /v1/dns/records/{domain}

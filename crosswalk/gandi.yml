@@ -1,0 +1,27 @@
+provider: gandi
+apis_io: https://apis.io/providers/gandi/
+context: dns
+generated: '2026-11-11'
+concepts:
+  domain:
+    path_segment:
+    - domains
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/domains-openapi-original.yml#DELETE /domains/{domain}
+    - openapi/_original/domains-openapi-original.yml#GET /domains
+    - openapi/_original/domains-openapi-original.yml#GET /domains/{domain}
+    - openapi/_original/domains-openapi-original.yml#POST /domains
+    - openapi/_original/livedns-openapi-original.yml#GET /domains
+  dns_record:
+    path_segment:
+    - records
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/livedns-openapi-original.yml#DELETE /domains/{fqdn}/records
+    - openapi/_original/livedns-openapi-original.yml#GET /domains/{fqdn}/records
+    - openapi/_original/livedns-openapi-original.yml#GET /domains/{fqdn}/records/{rrset_name}
+    - openapi/_original/livedns-openapi-original.yml#POST /domains/{fqdn}/records
+    - openapi/_original/livedns-openapi-original.yml#PUT /domains/{fqdn}/records

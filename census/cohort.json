@@ -1,0 +1,791 @@
+[
+ {
+  "slug": "10web",
+  "specs": [
+   "openapi/_original/10web-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "agentspodium-com",
+  "specs": [
+   "openapi/_original/agentspodium-com-openapi.json",
+   "openapi/_original/agentspodium-com-openapi.yml"
+  ]
+ },
+ {
+  "slug": "amazon-amplify",
+  "specs": [
+   "openapi/_original/amazon-amplify-api-openapi.yml",
+   "openapi/_original/amazon-amplify-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "amazon-lightsail",
+  "specs": [
+   "openapi/_original/amazon-lightsail-openapi.yml",
+   "openapi/_original/amazon-lightsail-openapi_2.yml",
+   "openapi/_original/openapi.yml"
+  ]
+ },
+ {
+  "slug": "amazon-route-53",
+  "specs": [
+   "openapi/_original/amazon-route-53-openapi.yml"
+  ]
+ },
+ {
+  "slug": "amazon-route53-resolver",
+  "specs": [
+   "openapi/_original/amazon-route53-resolver-openapi.yml"
+  ]
+ },
+ {
+  "slug": "apifreaks-api-hub-for-developers",
+  "specs": [
+   "openapi/_original/apifreaks-api-hub-for-developers-administrative-units-details-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-administrative-units-levels-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-administrative-units-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-air-quality-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-asn-lookup-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-astronomy-data-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-bulk-dns-lookup-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-bulk-domain-checker-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-bulk-email-validation-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-bulk-ip-lookup-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-bulk-ip-threat-intelligence-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-bulk-live-weather-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-bulk-phone-number-validation-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-bulk-screenshot-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-bulk-user-agent-parser-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-bulk-vat-rates-country-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-bulk-whois-lookup-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-bulk-zip-code-lookup-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-cities-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-commodity-fluctuation-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-commodity-prices-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-commodity-symbols-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-commodity-time-series-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-countries-details-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-countries-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-currency-converter-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-currency-fluctuation-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-currency-historical-data-limit-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-currency-rate-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-currency-supported-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-currency-symbols-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-currency-time-series-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-delete-pdf-page-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-dns-history-lookup-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-dns-lookup-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-domain-search-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-domain-search-with-suggestions-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-domain-whois-history-lookup-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-email-checker-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-financial-apis-supported-countries-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-flags-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-flags-supported-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-flood-forecast-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-forward-geocoding-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-geolocalized-currency-conversion-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-historical-commodity-prices-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-historical-currency-converter-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-historical-currency-rate-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-historical-weather-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-iban-validation-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-ip-locator-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-ip-threat-intelligence-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-linearize-pdf-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-live-weather-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-marine-weather-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-merge-pdf-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-pdf-compress-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-pdf-decrypt-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-pdf-encrypt-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-pdf-extract-pages-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-pdf-file-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-pdf-file-status-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-pdf-files-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-pdf-generator-bulk-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-pdf-generator-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-pdf-resource-download-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-pdf-resource-upload-binary-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-pdf-resource-upload-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-pdf-restrict-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-pdf-task-status-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-pdf-to-image-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-pdf-unrestrict-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-phone-validation-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-regions-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-reverse-dns-lookup-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-reverse-geocoding-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-reverse-whois-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-rotate-pdf-pages-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-split-pdf-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-ssl-certificate-chain-lookup-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-ssl-certificate-lookup-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-subdomain-lookup-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-subregions-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-swift-code-finder-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-swift-code-lookup-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-time-series-weather-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-timezone-converter-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-timezone-lookup-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-usage-credits-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-user-agent-parser-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-vat-number-validation-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-vat-rates-by-ip-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-vat-rates-country-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-weather-forecast-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-web-scraper-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-website-screenshot-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-whois-domain-lookup-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-whois-ip-lookup-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-zip-code-api-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-zip-code-distance-match-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-zip-code-distance-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-zip-codes-by-city-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-zip-codes-by-region-openapi.json",
+   "openapi/_original/apifreaks-api-hub-for-developers-zip-codes-radius-search-openapi.json"
+  ]
+ },
+ {
+  "slug": "apiverve",
+  "specs": [
+   "openapi/_original/apiverve-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "appwrite",
+  "specs": [
+   "openapi/_original/appwrite-open-api3-latest.json",
+   "openapi/_original/appwrite-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "automattic",
+  "specs": [
+   "openapi/_original/automattic-akismet-openapi.yml",
+   "openapi/_original/automattic-jetpack-ai-plugin-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "bookmyhost",
+  "specs": [
+   "openapi/_original/openapi.json"
+  ]
+ },
+ {
+  "slug": "brewpage",
+  "specs": [
+   "openapi/_original/brewpage-openapi.json"
+  ]
+ },
+ {
+  "slug": "broke2builtai-com",
+  "specs": [
+   "openapi/_original/broke2builtai-com-skills-openapi.json",
+   "openapi/_original/broke2builtai-com-zero-openapi.json"
+  ]
+ },
+ {
+  "slug": "bunny-net",
+  "specs": [
+   "openapi/_original/bunny-net-openapi.yml"
+  ]
+ },
+ {
+  "slug": "catchdoms",
+  "specs": [
+   "openapi/_original/catchdoms-openapi.yml"
+  ]
+ },
+ {
+  "slug": "cisco-umbrella",
+  "specs": [
+   "openapi/_original/cisco-umbrella-admin-key-admin-openapi.yml",
+   "openapi/_original/cisco-umbrella-admin-key-admin.yaml",
+   "openapi/_original/cisco-umbrella-admin-managed-providers-openapi.yml",
+   "openapi/_original/cisco-umbrella-admin-managed-providers.yaml",
+   "openapi/_original/cisco-umbrella-admin-providers-openapi.yml",
+   "openapi/_original/cisco-umbrella-admin-providers.yaml",
+   "openapi/_original/cisco-umbrella-admin-s3-key-rotation-openapi.yml",
+   "openapi/_original/cisco-umbrella-admin-s3-key-rotation.yaml",
+   "openapi/_original/cisco-umbrella-admin-service-providers-console-openapi.yml",
+   "openapi/_original/cisco-umbrella-admin-service-providers-console.yaml",
+   "openapi/_original/cisco-umbrella-admin-users-roles-openapi.yml",
+   "openapi/_original/cisco-umbrella-admin-users-roles.yaml",
+   "openapi/_original/cisco-umbrella-auth-token-openapi.yml",
+   "openapi/_original/cisco-umbrella-auth-token.yaml",
+   "openapi/_original/cisco-umbrella-cloudlock-cloudlock-openapi.yml",
+   "openapi/_original/cisco-umbrella-cloudlock-cloudlock.yaml",
+   "openapi/_original/cisco-umbrella-deployments-internal-domains-openapi.yml",
+   "openapi/_original/cisco-umbrella-deployments-internal-domains.yaml",
+   "openapi/_original/cisco-umbrella-deployments-internal-networks-openapi.yml",
+   "openapi/_original/cisco-umbrella-deployments-internal-networks.yaml",
+   "openapi/_original/cisco-umbrella-deployments-network-devices-openapi.yml",
+   "openapi/_original/cisco-umbrella-deployments-network-devices.yaml",
+   "openapi/_original/cisco-umbrella-deployments-network-tunnels-openapi.yml",
+   "openapi/_original/cisco-umbrella-deployments-network-tunnels.yaml",
+   "openapi/_original/cisco-umbrella-deployments-networks-openapi.yml",
+   "openapi/_original/cisco-umbrella-deployments-networks.yaml",
+   "openapi/_original/cisco-umbrella-deployments-policies-openapi.yml",
+   "openapi/_original/cisco-umbrella-deployments-policies.yaml",
+   "openapi/_original/cisco-umbrella-deployments-roaming-computers-openapi.yml",
+   "openapi/_original/cisco-umbrella-deployments-roaming-computers.yaml",
+   "openapi/_original/cisco-umbrella-deployments-sites-openapi.yml",
+   "openapi/_original/cisco-umbrella-deployments-sites.yaml",
+   "openapi/_original/cisco-umbrella-deployments-swg-devices-openapi.yml",
+   "openapi/_original/cisco-umbrella-deployments-swg-devices.yaml",
+   "openapi/_original/cisco-umbrella-deployments-tagging-openapi.yml",
+   "openapi/_original/cisco-umbrella-deployments-tagging.yaml",
+   "openapi/_original/cisco-umbrella-deployments-virtual-appliances-openapi.yml",
+   "openapi/_original/cisco-umbrella-deployments-virtual-appliances.yaml",
+   "openapi/_original/cisco-umbrella-investigate-investigate-openapi.yml",
+   "openapi/_original/cisco-umbrella-investigate-investigate.yaml",
+   "openapi/_original/cisco-umbrella-policies-application-lists-internet-umb-openapi.yml",
+   "openapi/_original/cisco-umbrella-policies-application-lists-internet-umb.yaml",
+   "openapi/_original/cisco-umbrella-policies-destination-lists-openapi.yml",
+   "openapi/_original/cisco-umbrella-policies-destination-lists.yaml",
+   "openapi/_original/cisco-umbrella-reports-api-usage-openapi.yml",
+   "openapi/_original/cisco-umbrella-reports-api-usage.yaml",
+   "openapi/_original/cisco-umbrella-reports-app-discovery-openapi.yml",
+   "openapi/_original/cisco-umbrella-reports-app-discovery.yaml",
+   "openapi/_original/cisco-umbrella-reports-provider-consoles-openapi.yml",
+   "openapi/_original/cisco-umbrella-reports-provider-consoles.yaml",
+   "openapi/_original/cisco-umbrella-reports-reporting-openapi.yml",
+   "openapi/_original/cisco-umbrella-reports-reporting.yaml"
+  ]
+ },
+ {
+  "slug": "cloudflare",
+  "specs": [
+   "openapi/_original/cloudflare-accounts--openapi-original.yml",
+   "openapi/_original/cloudflare-ai-gateway-openapi.yml",
+   "openapi/_original/cloudflare-certificates--openapi-original.yml",
+   "openapi/_original/cloudflare-d1-openapi.yml",
+   "openapi/_original/cloudflare-dns-openapi.yml",
+   "openapi/_original/cloudflare-durable-objects-openapi.yml",
+   "openapi/_original/cloudflare-hyperdrive-openapi.yml",
+   "openapi/_original/cloudflare-images-openapi.yml",
+   "openapi/_original/cloudflare-ips--openapi-original.yml",
+   "openapi/_original/cloudflare-kv-openapi.yml",
+   "openapi/_original/cloudflare-logpush-openapi.yml",
+   "openapi/_original/cloudflare-memberships--openapi-original.yml",
+   "openapi/_original/cloudflare-openapi-original.yml",
+   "openapi/_original/cloudflare-openapi.json",
+   "openapi/_original/cloudflare-pages-openapi.yml",
+   "openapi/_original/cloudflare-queues-openapi.yml",
+   "openapi/_original/cloudflare-r2-openapi.yml",
+   "openapi/_original/cloudflare-radar--openapi-original.yml",
+   "openapi/_original/cloudflare-stream-openapi.yml",
+   "openapi/_original/cloudflare-turnstile-openapi.yml",
+   "openapi/_original/cloudflare-user--openapi-original.yml",
+   "openapi/_original/cloudflare-vectorize-openapi.yml",
+   "openapi/_original/cloudflare-workers-ai-openapi.yml",
+   "openapi/_original/cloudflare-workers-openapi.yml",
+   "openapi/_original/cloudflare-zones--openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "completedns",
+  "specs": [
+   "openapi/_original/completedns-v1-openapi.yml",
+   "openapi/_original/completedns-v2-openapi.yml"
+  ]
+ },
+ {
+  "slug": "contabo",
+  "specs": [
+   "openapi/_original/contabo-api-redoc-embedded.json",
+   "openapi/_original/contabo-openapi.yml"
+  ]
+ },
+ {
+  "slug": "coredns",
+  "specs": [
+   "openapi/_original/coredns-health-openapi.yml",
+   "openapi/_original/coredns-metrics-openapi.yml"
+  ]
+ },
+ {
+  "slug": "cpanel",
+  "specs": [
+   "openapi/_original/cpanel-uapi-openapi.yml",
+   "openapi/_original/cpanel-uapi-openapi_2.yml",
+   "openapi/_original/cpanel-whm-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "d3",
+  "specs": [
+   "openapi/_original/d3-doma-openapi.json"
+  ]
+ },
+ {
+  "slug": "dns-check",
+  "specs": [
+   "openapi/_original/dns-check-openapi.json"
+  ]
+ },
+ {
+  "slug": "dnsfilter",
+  "specs": [
+   "openapi/_original/dnsfilter-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "domaintools",
+  "specs": [
+   "openapi/_original/domaintools-dnsdb-openapi.yml",
+   "openapi/_original/domaintools-iris-openapi.yml",
+   "openapi/_original/domaintools-lookups-monitors-openapi.yml",
+   "openapi/_original/domaintools-sie-openapi.yml"
+  ]
+ },
+ {
+  "slug": "domscan",
+  "specs": [
+   "openapi/_original/domscan-openapi.json"
+  ]
+ },
+ {
+  "slug": "done",
+  "specs": [
+   "openapi/_original/done-asn-lookup-openapi.json",
+   "openapi/_original/done-asn-lookup-openapi.yml",
+   "openapi/_original/done-bimi-checker-openapi.json",
+   "openapi/_original/done-bimi-checker-openapi.yml",
+   "openapi/_original/done-cors-header-checker-openapi.json",
+   "openapi/_original/done-cors-header-checker-openapi.yml",
+   "openapi/_original/done-cpi-report-us-openapi.json",
+   "openapi/_original/done-cpi-report-us-openapi.yml",
+   "openapi/_original/done-curl-http-request-openapi.json",
+   "openapi/_original/done-curl-http-request-openapi.yml",
+   "openapi/_original/done-directory-submission-lite-openapi.json",
+   "openapi/_original/done-directory-submission-lite-openapi.yml",
+   "openapi/_original/done-dmarc-lookup-openapi.json",
+   "openapi/_original/done-dmarc-lookup-openapi.yml",
+   "openapi/_original/done-dns-whois-lookup-openapi.json",
+   "openapi/_original/done-dns-whois-lookup-openapi.yml",
+   "openapi/_original/done-domain-age-checker-openapi.json",
+   "openapi/_original/done-domain-age-checker-openapi.yml",
+   "openapi/_original/done-domain-availability-checker-openapi.json",
+   "openapi/_original/done-domain-availability-checker-openapi.yml",
+   "openapi/_original/done-ens-resolver-openapi.json",
+   "openapi/_original/done-ens-resolver-openapi.yml",
+   "openapi/_original/done-hackernews-data-openapi.json",
+   "openapi/_original/done-hackernews-data-openapi.yml",
+   "openapi/_original/done-hash-hmac-openapi.json",
+   "openapi/_original/done-hash-hmac-openapi.yml",
+   "openapi/_original/done-http-header-checker-openapi.json",
+   "openapi/_original/done-http-header-checker-openapi.yml",
+   "openapi/_original/done-http-status-checker-openapi.json",
+   "openapi/_original/done-http-status-checker-openapi.yml",
+   "openapi/_original/done-json-suite-openapi.json",
+   "openapi/_original/done-json-suite-openapi.yml",
+   "openapi/_original/done-leetspeak-translator-openapi.json",
+   "openapi/_original/done-leetspeak-translator-openapi.yml",
+   "openapi/_original/done-mortgage-amortization-openapi.json",
+   "openapi/_original/done-mortgage-amortization-openapi.yml",
+   "openapi/_original/done-ocr-openapi.json",
+   "openapi/_original/done-ocr-openapi.yml",
+   "openapi/_original/done-port-scanner-openapi.json",
+   "openapi/_original/done-port-scanner-openapi.yml",
+   "openapi/_original/done-qr-code-generator-openapi.json",
+   "openapi/_original/done-qr-code-generator-openapi.yml",
+   "openapi/_original/done-screenshots-openapi.json",
+   "openapi/_original/done-screenshots-openapi.yml",
+   "openapi/_original/done-seo-data-extractor-openapi.json",
+   "openapi/_original/done-seo-data-extractor-openapi.yml",
+   "openapi/_original/done-shopify-ai-rank-checker-openapi.json",
+   "openapi/_original/done-shopify-ai-rank-checker-openapi.yml",
+   "openapi/_original/done-sitemap-url-extractor-openapi.json",
+   "openapi/_original/done-sitemap-url-extractor-openapi.yml",
+   "openapi/_original/done-url-uptime-checker-openapi.json",
+   "openapi/_original/done-url-uptime-checker-openapi.yml"
+  ]
+ },
+ {
+  "slug": "edgegap",
+  "specs": [
+   "openapi/_original/edgegap-openapi.json"
+  ]
+ },
+ {
+  "slug": "fly-io",
+  "specs": [
+   "openapi/_original/fly-io-openapi.json"
+  ]
+ },
+ {
+  "slug": "freestyle-sh",
+  "specs": [
+   "openapi/_original/freestyle-cron-api-openapi.yml",
+   "openapi/_original/freestyle-domains-api-openapi.yml",
+   "openapi/_original/freestyle-execute-api-openapi.yml",
+   "openapi/_original/freestyle-git-api-openapi.yml",
+   "openapi/_original/freestyle-identity-api-openapi.yml",
+   "openapi/_original/freestyle-observability-api-openapi.yml",
+   "openapi/_original/freestyle-sh-openapi.json",
+   "openapi/_original/freestyle-web-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "frostbyte",
+  "specs": [
+   "openapi/_original/frostbyte-agent-gateway-openapi.yml",
+   "openapi/_original/frostbyte-code-execution-openapi.yml",
+   "openapi/_original/frostbyte-crypto-prices-openapi.yml",
+   "openapi/_original/frostbyte-dns-lookup-openapi.yml",
+   "openapi/_original/frostbyte-ip-geolocation-openapi.yml",
+   "openapi/_original/frostbyte-screenshot-openapi.yml",
+   "openapi/_original/frostbyte-web-scraper-openapi.yml"
+  ]
+ },
+ {
+  "slug": "gandi",
+  "specs": [
+   "openapi/_original/domains-openapi-original.yml",
+   "openapi/_original/livedns-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "geekflare",
+  "specs": [
+   "openapi/_original/geekflare-openapi.json"
+  ]
+ },
+ {
+  "slug": "godaddy",
+  "specs": [
+   "openapi/_original/godaddy-abuse-openapi.json",
+   "openapi/_original/godaddy-aftermarket-openapi.json",
+   "openapi/_original/godaddy-agreements-openapi.json",
+   "openapi/_original/godaddy-certificates-openapi.json",
+   "openapi/_original/godaddy-countries-openapi.json",
+   "openapi/_original/godaddy-domains-openapi.json",
+   "openapi/_original/godaddy-openapi.json",
+   "openapi/_original/godaddy-orders-openapi.json",
+   "openapi/_original/godaddy-shoppers-openapi.json",
+   "openapi/_original/godaddy-subscriptions-openapi.json"
+  ]
+ },
+ {
+  "slug": "google-cloud-dns",
+  "specs": [
+   "openapi/_original/dns-openapi.yml"
+  ]
+ },
+ {
+  "slug": "google-firebase",
+  "specs": [
+   "openapi/_original/firebase-cloud-messaging-openapi.yml",
+   "openapi/_original/firebase-realtime-database-openapi.yml"
+  ]
+ },
+ {
+  "slug": "hathora",
+  "specs": [
+   "openapi/_original/hathora-openapi.yml"
+  ]
+ },
+ {
+  "slug": "hetzner",
+  "specs": [
+   "openapi/_original/hetzner-openapi.yml"
+  ]
+ },
+ {
+  "slug": "horizoniq",
+  "specs": [
+   "openapi/_original/horizoniq-compass-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "infoblox",
+  "specs": [
+   "openapi/_original/infoblox-wapi-openapi.yml"
+  ]
+ },
+ {
+  "slug": "karma-domains",
+  "specs": [
+   "openapi/_original/karma-domains-openapi.json"
+  ]
+ },
+ {
+  "slug": "koyeb",
+  "specs": [
+   "openapi/_original/koyeb-openapi.json"
+  ]
+ },
+ {
+  "slug": "leaseweb",
+  "specs": [
+   "openapi/_original/leaseweb-abuse-openapi.yaml",
+   "openapi/_original/leaseweb-abuse-openapi.yml",
+   "openapi/_original/leaseweb-aggregationpack-openapi.yaml",
+   "openapi/_original/leaseweb-aggregationpack-openapi.yml",
+   "openapi/_original/leaseweb-dedicatedserver-openapi.yaml",
+   "openapi/_original/leaseweb-dedicatedserver-openapi.yml",
+   "openapi/_original/leaseweb-dns-openapi.yaml",
+   "openapi/_original/leaseweb-dns-openapi.yml",
+   "openapi/_original/leaseweb-invoice-openapi.yaml",
+   "openapi/_original/leaseweb-invoice-openapi.yml",
+   "openapi/_original/leaseweb-ipmgmt-openapi.yaml",
+   "openapi/_original/leaseweb-ipmgmt-openapi.yml",
+   "openapi/_original/leaseweb-networkequipment-openapi.yaml",
+   "openapi/_original/leaseweb-networkequipment-openapi.yml",
+   "openapi/_original/leaseweb-objectstorage-openapi.yaml",
+   "openapi/_original/leaseweb-objectstorage-openapi.yml",
+   "openapi/_original/leaseweb-openapi-openapi.yml",
+   "openapi/_original/leaseweb-ordering-openapi.yaml",
+   "openapi/_original/leaseweb-ordering-openapi.yml",
+   "openapi/_original/leaseweb-publiccloud-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "linode",
+  "specs": [
+   "openapi/_original/linode-api-v4-official-openapi.json",
+   "openapi/_original/linode-api-v4-openapi.yml"
+  ]
+ },
+ {
+  "slug": "mcp360",
+  "specs": [
+   "openapi/_original/mcp360-amazon-search-openapi.json",
+   "openapi/_original/mcp360-apple-appstore-openapi.json",
+   "openapi/_original/mcp360-baidu-search-openapi.json",
+   "openapi/_original/mcp360-bing-search-openapi.json",
+   "openapi/_original/mcp360-cryptocurrency-openapi.json",
+   "openapi/_original/mcp360-currency-converter-openapi.json",
+   "openapi/_original/mcp360-dns-lookup-openapi.json",
+   "openapi/_original/mcp360-duckduckgo-search-openapi.json",
+   "openapi/_original/mcp360-ebay-search-openapi.json",
+   "openapi/_original/mcp360-email-verification-openapi.json",
+   "openapi/_original/mcp360-google-flights-openapi.json",
+   "openapi/_original/mcp360-google-forums-openapi.json",
+   "openapi/_original/mcp360-google-hotels-openapi.json",
+   "openapi/_original/mcp360-google-images-openapi.json",
+   "openapi/_original/mcp360-google-jobs-openapi.json",
+   "openapi/_original/mcp360-google-maps-openapi.json",
+   "openapi/_original/mcp360-google-news-openapi.json",
+   "openapi/_original/mcp360-google-play-openapi.json",
+   "openapi/_original/mcp360-google-rank-tracking-openapi.json",
+   "openapi/_original/mcp360-google-scholar-openapi.json",
+   "openapi/_original/mcp360-google-search-openapi.json",
+   "openapi/_original/mcp360-google-shopping-openapi.json",
+   "openapi/_original/mcp360-google-trends-openapi.json",
+   "openapi/_original/mcp360-imginny-openapi.json",
+   "openapi/_original/mcp360-ip-info-openapi.json",
+   "openapi/_original/mcp360-keyword-research-openapi.json",
+   "openapi/_original/mcp360-llm-prompt-tracker-openapi.json",
+   "openapi/_original/mcp360-mcp360-openapi.json",
+   "openapi/_original/mcp360-naver-search-openapi.json",
+   "openapi/_original/mcp360-onpage-seo-openapi.json",
+   "openapi/_original/mcp360-url-lookup-openapi.json",
+   "openapi/_original/mcp360-walmart-search-openapi.json",
+   "openapi/_original/mcp360-weather-openapi.json",
+   "openapi/_original/mcp360-web-scraping-openapi.json",
+   "openapi/_original/mcp360-whois-openapi.json",
+   "openapi/_original/mcp360-yahoo-search-openapi.json",
+   "openapi/_original/mcp360-yandex-search-openapi.json",
+   "openapi/_original/mcp360-youtube-openapi.json"
+  ]
+ },
+ {
+  "slug": "microsoft-azure-private-link",
+  "specs": [
+   "openapi/_original/microsoft-azure-private-link-private-endpoint-swagger.json",
+   "openapi/_original/microsoft-azure-private-link-private-link-service-swagger.json"
+  ]
+ },
+ {
+  "slug": "monacloud",
+  "specs": [
+   "openapi/_original/monacloud-api-openapi.json",
+   "openapi/_original/monacloud-vn-openapi.json"
+  ]
+ },
+ {
+  "slug": "nacos",
+  "specs": [
+   "openapi/_original/nacos-open-api.yml"
+  ]
+ },
+ {
+  "slug": "networkcalc",
+  "specs": [
+   "openapi/_original/networkcalc-openapi-original.yaml"
+  ]
+ },
+ {
+  "slug": "nimbusnexus",
+  "specs": [
+   "openapi/_original/external.json"
+  ]
+ },
+ {
+  "slug": "openprovider",
+  "specs": [
+   "openapi/_original/openprovider-openapi.json"
+  ]
+ },
+ {
+  "slug": "ovh-cloud",
+  "specs": [
+   "openapi/_original/ovh-cloud-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "pi-hole",
+  "specs": [
+   "openapi/_original/pi-hole-openapi.yml"
+  ]
+ },
+ {
+  "slug": "quantcdn",
+  "specs": [
+   "openapi/_original/quantcdn-openapi.yml"
+  ]
+ },
+ {
+  "slug": "render",
+  "specs": [
+   "openapi/_original/render-openapi.json"
+  ]
+ },
+ {
+  "slug": "sakura-internet",
+  "specs": [
+   "openapi/_original/addon-api.yaml",
+   "openapi/_original/ai-engine-inference-api.yaml",
+   "openapi/_original/ai-engine-rag-api.yaml",
+   "openapi/_original/apigw-api.yaml",
+   "openapi/_original/apprun-dedicated-api.yaml",
+   "openapi/_original/apprun-shared-api.yaml",
+   "openapi/_original/eventbus-api.yaml",
+   "openapi/_original/iam-api.yaml",
+   "openapi/_original/monitoring-suite-api.yaml",
+   "openapi/_original/networking-suite-api.yaml",
+   "openapi/_original/nosql-api.yaml",
+   "openapi/_original/objectstorage-api.yaml",
+   "openapi/_original/phy-api-original-swagger.json",
+   "openapi/_original/sakura-internet-addon-openapi.yml",
+   "openapi/_original/sakura-internet-ai-engine-inference-openapi.yml",
+   "openapi/_original/sakura-internet-ai-engine-rag-openapi.yml",
+   "openapi/_original/sakura-internet-apigw-openapi.yml",
+   "openapi/_original/sakura-internet-apprun-dedicated-openapi.yml",
+   "openapi/_original/sakura-internet-apprun-shared-openapi.yml",
+   "openapi/_original/sakura-internet-eventbus-openapi.yml",
+   "openapi/_original/sakura-internet-iam-openapi.yml",
+   "openapi/_original/sakura-internet-monitoring-suite-openapi.yml",
+   "openapi/_original/sakura-internet-networking-suite-openapi.yml",
+   "openapi/_original/sakura-internet-nosql-openapi.yml",
+   "openapi/_original/sakura-internet-objectstorage-openapi.yml",
+   "openapi/_original/sakura-internet-phy-openapi.yml",
+   "openapi/_original/sakura-internet-security-control-openapi.yml",
+   "openapi/_original/sakura-internet-security-encryption-openapi.yml",
+   "openapi/_original/sakura-internet-seg-openapi.yml",
+   "openapi/_original/sakura-internet-simple-notification-openapi.yml",
+   "openapi/_original/sakura-internet-simplemq-openapi.yml",
+   "openapi/_original/sakura-internet-simplemq-sacloud-openapi.yml",
+   "openapi/_original/sakura-internet-workflows-openapi.yml",
+   "openapi/_original/security-control-api.yaml",
+   "openapi/_original/security-encryption-api.yaml",
+   "openapi/_original/seg-api.yaml",
+   "openapi/_original/simple-notification-api.yaml",
+   "openapi/_original/simplemq-api.yaml",
+   "openapi/_original/simplemq-sacloud-api.yaml",
+   "openapi/_original/workflows-api.yaml"
+  ]
+ },
+ {
+  "slug": "servghost-agent-api",
+  "specs": [
+   "openapi/_original/servghost-agent-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "sevalla",
+  "specs": [
+   "openapi/_original/sevalla-openapi.yml"
+  ]
+ },
+ {
+  "slug": "shodan",
+  "specs": [
+   "openapi/_original/shodan-cvedb-openapi.yml",
+   "openapi/_original/shodan-internetdb-openapi.yml",
+   "openapi/_original/shodan-rest-openapi.yml",
+   "openapi/_original/shodan-stream-openapi.yml",
+   "openapi/_original/shodan-trends-openapi.yml"
+  ]
+ },
+ {
+  "slug": "smithery-ai",
+  "specs": [
+   "openapi/_original/smithery-connect-api-openapi.yml",
+   "openapi/_original/smithery-registry-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "spaceship",
+  "specs": [
+   "openapi/_original/spaceship-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "uchecker",
+  "specs": [
+   "openapi/_original/uchecker-openapi.json"
+  ]
+ },
+ {
+  "slug": "unstoppable-domains",
+  "specs": [
+   "openapi/_original/unstoppable-domains-partner-api-openapi.yaml",
+   "openapi/_original/unstoppable-domains-reseller-api-openapi.yaml",
+   "openapi/_original/unstoppable-domains-resolution-api-openapi.yaml",
+   "openapi/_original/unstoppable-domains-user-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "upsun",
+  "specs": [
+   "openapi/_original/upsun-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "vercel",
+  "specs": [
+   "openapi/_original/vercel-ai-gateway-openapi.yml",
+   "openapi/_original/vercel-v0-platform-openapi.yml"
+  ]
+ },
+ {
+  "slug": "whisper-online",
+  "specs": [
+   "openapi/_original/whisper-online-openapi.json"
+  ]
+ },
+ {
+  "slug": "whmcs",
+  "specs": [
+   "openapi/_original/whmcs-openapi.yml"
+  ]
+ },
+ {
+  "slug": "whoapi",
+  "specs": [
+   "openapi/_original/whoapi-openapi.yml"
+  ]
+ },
+ {
+  "slug": "whoisfreaks",
+  "specs": [
+   "openapi/_original/whoisfreaks-openapi-original.yml"
+  ]
+ }
+]

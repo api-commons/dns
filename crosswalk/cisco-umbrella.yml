@@ -1,0 +1,15 @@
+provider: cisco-umbrella
+apis_io: https://apis.io/providers/cisco-umbrella/
+context: dns
+generated: '2026-11-11'
+concepts:
+  domain:
+    path_segment:
+    - domain
+    properties:
+      name: name
+      type: type
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/cisco-umbrella-investigate-investigate-openapi.yml#GET /pdns/domain/{domain}
+    - openapi/_original/cisco-umbrella-investigate-investigate.yaml#GET /pdns/domain/{domain}

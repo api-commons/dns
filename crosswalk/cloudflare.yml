@@ -1,0 +1,80 @@
+provider: cloudflare
+apis_io: https://apis.io/providers/cloudflare/
+context: dns
+generated: '2026-11-11'
+concepts:
+  domain:
+    path_segment:
+    - domains
+    - registrations
+    - domain
+    properties:
+      id:
+      - zone_id
+      - id
+      - domain_id
+      name:
+      - hostname
+      - name
+      - domain_name
+      created_at:
+      - created_at
+      - created_on
+      status:
+      - status
+      - state
+      updated_at:
+      - updated_at
+      - last_modified
+      - modified_at
+      expires_at: expires_at
+      auto_renew: auto_renew
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/cloudflare-accounts--openapi-original.yml#DELETE /accounts/{account_id}/pages/projects/{project_name}/domains/{domain_name}
+    - openapi/_original/cloudflare-accounts--openapi-original.yml#DELETE /accounts/{account_id}/workers/domains/{domain_id}
+    - openapi/_original/cloudflare-accounts--openapi-original.yml#GET /accounts/{account_id}/intel/domain
+    - openapi/_original/cloudflare-accounts--openapi-original.yml#GET /accounts/{account_id}/intel/domain/bulk
+    - openapi/_original/cloudflare-accounts--openapi-original.yml#GET /accounts/{account_id}/pages/projects/{project_name}/domains
+  zone:
+    path_segment:
+    - zones
+    properties:
+      id: id
+      name: name
+      created_at: created_on
+      status:
+      - paused
+      - status
+      nameservers: name_servers
+      type: type
+      updated_at: modified_on
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/cloudflare-accounts--openapi-original.yml#DELETE /accounts/{account_id}/addressing/address_maps/{address_map_id}/zones/{zone_id}
+    - openapi/_original/cloudflare-accounts--openapi-original.yml#PUT /accounts/{account_id}/addressing/address_maps/{address_map_id}/zones/{zone_id}
+    - openapi/_original/cloudflare-openapi-original.yml#DELETE /accounts/{account_id}/addressing/address_maps/{address_map_id}/zones/{zone_id}
+    - openapi/_original/cloudflare-openapi-original.yml#DELETE /zones/{zone_id}
+    - openapi/_original/cloudflare-openapi-original.yml#GET /zones
+  dns_record:
+    path_segment:
+    - dns_records
+    properties:
+      name: name
+      type: type
+      ttl: ttl
+      id:
+      - id
+      - zone_id
+      priority: priority
+      content: content
+      created_at: created_on
+      updated_at: modified_on
+      comment: comment
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/cloudflare-dns-openapi.yml#DELETE /zones/{zone_id}/dns_records/{dns_record_id}
+    - openapi/_original/cloudflare-dns-openapi.yml#GET /zones/{zone_id}/dns_records
+    - openapi/_original/cloudflare-dns-openapi.yml#GET /zones/{zone_id}/dns_records/{dns_record_id}
+    - openapi/_original/cloudflare-dns-openapi.yml#PATCH /zones/{zone_id}/dns_records/{dns_record_id}
+    - openapi/_original/cloudflare-dns-openapi.yml#POST /zones/{zone_id}/dns_records

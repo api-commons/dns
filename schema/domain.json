@@ -1,0 +1,146 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/dns/main/schema/domain.json",
+  "title": "Domain",
+  "description": "The common domain in DNS and Domains, distilled from 20 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.7,
+      "x-commons-providers": 14,
+      "x-commons-spellings": [
+        "id",
+        "zone_id",
+        "domain_id",
+        "$id",
+        "domainId"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.7,
+      "x-commons-providers": 14,
+      "x-commons-spellings": [
+        "name",
+        "hostname",
+        "domain_name",
+        "domainName",
+        "host"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.55,
+      "x-commons-providers": 11,
+      "x-commons-spellings": [
+        "created_at",
+        "createdAt",
+        "$createdAt",
+        "created_on",
+        "created",
+        "creation_date"
+      ],
+      "format": "date-time"
+    },
+    "status": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.45,
+      "x-commons-providers": 9,
+      "x-commons-spellings": [
+        "status",
+        "state"
+      ]
+    },
+    "updated_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.4,
+      "x-commons-providers": 8,
+      "x-commons-spellings": [
+        "updated_at",
+        "updatedAt",
+        "$updatedAt",
+        "last_modified",
+        "modified_at",
+        "modifiedAt",
+        "updated"
+      ],
+      "format": "date-time"
+    },
+    "type": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.35,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "type",
+        "@type"
+      ]
+    },
+    "expires_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.3,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "expires_at",
+        "renewalDate",
+        "expires",
+        "expiresAt",
+        "expiration_date",
+        "renewal_date",
+        "expirationDate"
+      ],
+      "format": "date-time"
+    },
+    "nameservers": {
+      "type": "array",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.3,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "nameservers",
+        "name_servers",
+        "nameServers"
+      ]
+    },
+    "auto_renew": {
+      "type": "boolean",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.25,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "autoRenewal",
+        "auto_renew",
+        "renewAuto",
+        "autorenew",
+        "autoRenew"
+      ]
+    },
+    "description": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.2,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "description"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "dns",
+    "concept": "domain",
+    "providers": 20,
+    "generated": "2026-11-11",
+    "version": "0.1.0-draft.20261111",
+    "status": "draft"
+  }
+}

@@ -1,0 +1,14 @@
+provider: domaintools
+apis_io: https://apis.io/providers/domaintools/
+context: dns
+generated: '2026-11-11'
+concepts:
+  domain:
+    path_segment:
+    - domains
+    properties:
+      id: id
+      status: state
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/domaintools-iris-openapi.yml#PATCH /v1/iris-detect/domains/

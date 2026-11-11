@@ -1,0 +1,16 @@
+provider: quantcdn
+apis_io: https://apis.io/providers/quantcdn/
+context: dns
+generated: '2026-11-11'
+concepts:
+  domain:
+    path_segment:
+    - domains
+    properties:
+      id: id
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/quantcdn-openapi.yml#DELETE /api/v2/organizations/{organization}/projects/{project}/domains/{domain}
+    - openapi/_original/quantcdn-openapi.yml#GET /api/v2/organizations/{organization}/projects/{project}/domains
+    - openapi/_original/quantcdn-openapi.yml#GET /api/v2/organizations/{organization}/projects/{project}/domains/{domain}
+    - openapi/_original/quantcdn-openapi.yml#POST /api/v2/organizations/{organization}/projects/{project}/domains

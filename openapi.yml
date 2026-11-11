@@ -1,0 +1,314 @@
+openapi: 3.1.0
+info:
+  title: DNS and Domains (API Commons)
+  version: 0.1.0-draft.20261111
+  description: 'The common DNS and Domains interface, distilled from the harvested OpenAPI of 69 providers in the
+    APIs.io catalog. Not a product: no one serves this API. It is the shape the market already shares, measured,
+    so that providers, agents and integrators can map to one vocabulary. See profile.yml.'
+  license:
+    name: CC BY-NC-SA 4.0
+    url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+paths:
+  /domains:
+    get:
+      operationId: listDomains
+      summary: List domains
+      tags:
+      - Domains
+      x-commons-tier: core
+      x-commons-share: 0.87
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id001
+                  $ref: '#/components/schemas/Domain'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createDomain
+      summary: Create a domain
+      tags:
+      - Domains
+      x-commons-tier: core
+      x-commons-share: 0.696
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+  /domains/{domain_id}:
+    parameters:
+    - $ref: '#/components/parameters/domain_id'
+    get:
+      operationId: getDomain
+      summary: Get a domain
+      tags:
+      - Domains
+      x-commons-tier: core
+      x-commons-share: 0.696
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+    delete:
+      operationId: deleteDomain
+      summary: Delete a domain
+      tags:
+      - Domains
+      x-commons-tier: core
+      x-commons-share: 0.522
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+    patch:
+      operationId: updateDomain
+      summary: Update a domain
+      tags:
+      - Domains
+      x-commons-tier: core
+      x-commons-share: 0.522
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+  /zones:
+    get:
+      operationId: listZones
+      summary: List zones
+      tags:
+      - Zones
+      x-commons-tier: core
+      x-commons-share: 1.0
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id002
+                  $ref: '#/components/schemas/Zone'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createZone
+      summary: Create a zone
+      tags:
+      - Zones
+      x-commons-tier: core
+      x-commons-share: 0.714
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id002
+  /zones/{zone_id}:
+    parameters:
+    - $ref: '#/components/parameters/zone_id'
+    delete:
+      operationId: deleteZone
+      summary: Delete a zone
+      tags:
+      - Zones
+      x-commons-tier: core
+      x-commons-share: 0.714
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+    get:
+      operationId: getZone
+      summary: Get a zone
+      tags:
+      - Zones
+      x-commons-tier: core
+      x-commons-share: 0.714
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+    patch:
+      operationId: updateZone
+      summary: Update a zone
+      tags:
+      - Zones
+      x-commons-tier: core
+      x-commons-share: 0.571
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id002
+  /zones/{zone_id}/records:
+    parameters:
+    - $ref: '#/components/parameters/zone_id'
+    get:
+      operationId: listRecords
+      summary: List records
+      tags:
+      - Dns Records
+      x-commons-tier: core
+      x-commons-share: 0.889
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id003
+                  $ref: '#/components/schemas/DnsRecord'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createDnsRecord
+      summary: Create a dns record
+      tags:
+      - Dns Records
+      x-commons-tier: core
+      x-commons-share: 0.778
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id003
+  /zones/{zone_id}/records/{dns_record_id}:
+    parameters:
+    - $ref: '#/components/parameters/zone_id'
+    - $ref: '#/components/parameters/dns_record_id'
+    delete:
+      operationId: deleteDnsRecord
+      summary: Delete a dns record
+      tags:
+      - Dns Records
+      x-commons-tier: core
+      x-commons-share: 0.611
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+    patch:
+      operationId: updateDnsRecord
+      summary: Update a dns record
+      tags:
+      - Dns Records
+      x-commons-tier: core
+      x-commons-share: 0.5
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id003
+    get:
+      operationId: getDnsRecord
+      summary: Get a dns record
+      tags:
+      - Dns Records
+      x-commons-tier: extended
+      x-commons-share: 0.333
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+components:
+  schemas:
+    Domain:
+      $ref: ./schema/domain.json
+    Zone:
+      $ref: ./schema/zone.json
+    DnsRecord:
+      $ref: ./schema/dns_record.json
+  parameters:
+    domain_id:
+      name: domain_id
+      in: path
+      required: true
+      schema:
+        type: string
+    zone_id:
+      name: zone_id
+      in: path
+      required: true
+      schema:
+        type: string
+    dns_record_id:
+      name: dns_record_id
+      in: path
+      required: true
+      schema:
+        type: string

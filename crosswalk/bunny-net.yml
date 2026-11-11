@@ -1,0 +1,22 @@
+provider: bunny-net
+apis_io: https://apis.io/providers/bunny-net/
+context: dns
+generated: '2026-11-11'
+concepts:
+  dns_record:
+    path_segment:
+    - records
+    properties:
+      name: Name
+      type: Type
+      ttl: Ttl
+      id: Id
+      priority: Priority
+      port: Port
+      weight: Weight
+      tag: Tag
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/bunny-net-openapi.yml#DELETE /dnszone/{id}/records/{recordId}
+    - openapi/_original/bunny-net-openapi.yml#POST /dnszone/{id}/records
+    - openapi/_original/bunny-net-openapi.yml#POST /dnszone/{id}/records/{recordId}

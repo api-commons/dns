@@ -1,0 +1,12 @@
+provider: shodan
+apis_io: https://apis.io/providers/shodan/
+context: dns
+generated: '2026-11-11'
+concepts:
+  domain:
+    path_segment:
+    - domain
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/shodan-rest-openapi.yml#GET /dns/domain/{domain}

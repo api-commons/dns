@@ -1,0 +1,36 @@
+provider: unstoppable-domains
+apis_io: https://apis.io/providers/unstoppable-domains/
+context: dns
+generated: '2026-11-11'
+concepts:
+  domain:
+    path_segment:
+    - domains
+    properties:
+      name: name
+      type: '@type'
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/unstoppable-domains-partner-api-openapi.yaml#DELETE /domains/{name}
+    - openapi/_original/unstoppable-domains-partner-api-openapi.yaml#GET /domains
+    - openapi/_original/unstoppable-domains-partner-api-openapi.yaml#GET /domains/{name}
+    - openapi/_original/unstoppable-domains-partner-api-openapi.yaml#GET /owners/{address}/domains
+    - openapi/_original/unstoppable-domains-partner-api-openapi.yaml#GET /search/owners/domains
+  dns_record:
+    path_segment:
+    - records
+    properties:
+      name: domain
+      type:
+      - '@type'
+      - type
+      ttl: ttl
+      id: id
+      content: values
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/unstoppable-domains-reseller-api-openapi.yaml#DELETE /domains/{name}/dns/records/{id}
+    - openapi/_original/unstoppable-domains-reseller-api-openapi.yaml#GET /domains/{name}/dns/records
+    - openapi/_original/unstoppable-domains-reseller-api-openapi.yaml#PATCH /domains/{name}/dns/records/{id}
+    - openapi/_original/unstoppable-domains-reseller-api-openapi.yaml#POST /domains/{name}/dns/records
+    - openapi/_original/unstoppable-domains-resolution-api-openapi.yaml#GET /records

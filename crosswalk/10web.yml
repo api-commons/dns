@@ -1,0 +1,30 @@
+provider: 10web
+apis_io: https://apis.io/providers/10web/
+context: dns
+generated: '2026-11-11'
+concepts:
+  zone:
+    path_segment:
+    - zone
+    properties:
+      id: id
+      name: name
+      nameservers: nameservers
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/10web-openapi.yaml#GET /v1/hosting/zone
+  dns_record:
+    path_segment:
+    - records
+    properties:
+      name: name
+      type: type
+      ttl: ttl
+      id: id
+      priority: priority
+      port: port
+      weight: weight
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/10web-openapi.yaml#GET /v1/hosting/zone/{zone_id}/records
+    - openapi/_original/10web-openapi.yaml#POST /v1/hosting/zone/{zone_id}/records/{record_id}

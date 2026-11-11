@@ -1,0 +1,2479 @@
+{
+ "cohort_size": 69,
+ "unreadable": [
+  {
+   "spec": "leaseweb/openapi/_original/leaseweb-openapi-openapi.yml",
+   "error": "while parsing a block mapping"
+  },
+  {
+   "spec": "leaseweb/openapi/_original/leaseweb-publiccloud-openapi.yaml",
+   "error": "while parsing a block mapping"
+  }
+ ],
+ "concepts": {
+  "domain": {
+   "amazon-amplify": {
+    "segments": [
+     "domains"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "domainName": "string",
+     "subDomainSettings": "array"
+    },
+    "evidence": [
+     "openapi/_original/amazon-amplify-api-openapi.yml#GET /apps/{appId}/domains",
+     "openapi/_original/amazon-amplify-api-openapi.yml#POST /apps/{appId}/domains",
+     "openapi/_original/amazon-amplify-openapi.yaml#GET /apps/{appId}/domains",
+     "openapi/_original/amazon-amplify-openapi.yaml#POST /apps/{appId}/domains"
+    ]
+   },
+   "appwrite": {
+    "segments": [
+     "domains",
+     "domain"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "$id": "string",
+     "$createdAt": "string",
+     "$updatedAt": "string",
+     "domain": "string",
+     "registrar": "string",
+     "nameservers": "string",
+     "expire": "string",
+     "renewal": "string",
+     "autoRenewal": "boolean",
+     "renewalPrice": "integer",
+     "transferStatus": "string",
+     "teamId": "string",
+     "dnsRecords": "array",
+     "soaSerial": "integer"
+    },
+    "evidence": [
+     "openapi/_original/appwrite-open-api3-latest.json#DELETE /domains/{domainId}",
+     "openapi/_original/appwrite-open-api3-latest.json#GET /domains",
+     "openapi/_original/appwrite-open-api3-latest.json#GET /domains/{domainId}",
+     "openapi/_original/appwrite-open-api3-latest.json#GET /manager/domain",
+     "openapi/_original/appwrite-open-api3-latest.json#POST /domains"
+    ]
+   },
+   "catchdoms": {
+    "segments": [
+     "domains"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "name": "string",
+     "tld": "string",
+     "source": "string",
+     "type": "string",
+     "price": "number",
+     "max_bid": "number",
+     "currency": "string",
+     "bids_count": "integer",
+     "auction_end_date": "string",
+     "score": "integer",
+     "age": "integer",
+     "domain_authority": "integer",
+     "backlinks_count": "integer",
+     "referring_domains": "integer",
+     "language": "string",
+     "purchase_url": "string",
+     "id": "integer",
+     "auction_type": "string",
+     "effective_price": "number",
+     "estibot_appraisal": "number",
+     "is_spammy": "boolean",
+     "wayback_snapshots": "integer",
+     "wayback_first_date": "string",
+     "wayback_last_date": "string",
+     "pagerank": "integer",
+     "trust_flow": "integer",
+     "citation_flow": "integer",
+     "ttf_topic": "string",
+     "ref_domains_edu": "integer",
+     "ref_domains_gov": "integer",
+     "ref_domains_dofollow": "integer",
+     "seo_domains_category": "string",
+     "seo_domains_subcategory": "string",
+     "indexed_pages": "integer",
+     "historical_tech": "array",
+     "use_cases": "array",
+     "historical_traffic_etv": "integer",
+     "historical_traffic_peak": "integer",
+     "historical_traffic_spark": "array",
+     "historical_traffic_fetched_at": "string",
+     "historical_traffic": "object",
+     "monthly_visitors": "integer",
+     "has_gmb": "boolean",
+     "gmb_name": "string",
+     "gmb_category": "string",
+     "gmb_address": "string",
+     "whois_registered_at": "string",
+     "whois_expires_at": "string",
+     "whois_last_changed_at": "string",
+     "whois_registrar": "string",
+     "whois_status": "array",
+     "whois_nameservers": "array",
+     "whois_ns_category": "string",
+     "whois_checked_at": "string",
+     "purchase_platform": "string",
+     "created_at": "string",
+     "updated_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/catchdoms-openapi.yml#GET /domains",
+     "openapi/_original/catchdoms-openapi.yml#GET /domains/{domain}",
+     "openapi/_original/catchdoms-openapi.yml#GET /free/domains"
+    ]
+   },
+   "cisco-umbrella": {
+    "segments": [
+     "domain"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "minTtl": "integer",
+     "maxTtl": "integer",
+     "firstSeen": "integer",
+     "lastSeen": "integer",
+     "name": "string",
+     "type": "string",
+     "securityCategories": "array",
+     "contentCategories": "array",
+     "firstSeenISO": "string",
+     "lastSeenISO": "string"
+    },
+    "evidence": [
+     "openapi/_original/cisco-umbrella-investigate-investigate-openapi.yml#GET /pdns/domain/{domain}",
+     "openapi/_original/cisco-umbrella-investigate-investigate.yaml#GET /pdns/domain/{domain}"
+    ]
+   },
+   "cloudflare": {
+    "segments": [
+     "domains",
+     "registrations",
+     "domain"
+    ],
+    "operations": [
+     "DELETE collection",
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "PUT collection",
+     "PUT item"
+    ],
+    "properties": {
+     "result": null,
+     "additional_information": null,
+     "application": null,
+     "content_categories": null,
+     "domain": null,
+     "inherited_content_categories": null,
+     "inherited_from": null,
+     "inherited_risk_types": null,
+     "popularity_rank": null,
+     "risk_score": null,
+     "risk_types": null,
+     "count": null,
+     "page": null,
+     "per_page": null,
+     "total_count": null,
+     "errors": null,
+     "messages": null,
+     "success": "boolean",
+     "environment": null,
+     "hostname": null,
+     "service": null,
+     "zone_id": null,
+     "resolves_to_refs": "array",
+     "result_info": "object",
+     "available": "boolean",
+     "can_register": "boolean",
+     "created_at": "string",
+     "current_registrar": "string",
+     "expires_at": "string",
+     "id": "string",
+     "locked": "boolean",
+     "registrant_contact": null,
+     "registry_statuses": "string",
+     "supported_tld": "boolean",
+     "transfer_in": "object",
+     "updated_at": "string",
+     "auto_renew": "boolean",
+     "privacy": "boolean",
+     "zone_name": "string",
+     "bucket": "string",
+     "categories": "array",
+     "rank": "integer",
+     "top_locations": "array",
+     "deleted": "boolean",
+     "deleted_at": "string",
+     "device": "object",
+     "key": "string",
+     "key_type": "string",
+     "last_seen_at": "string",
+     "policy": "object",
+     "registration_type": "string",
+     "revoked_at": "string",
+     "tunnel_type": "string",
+     "user": "object",
+     "virtual_ipv4": "string",
+     "virtual_ipv6": "string",
+     "allowed_delivery_modes": "array",
+     "authorization": "object",
+     "dmarc_status": "string",
+     "drop_dispositions": "array",
+     "emails_processed": "object",
+     "folder": null,
+     "inbox_provider": "string",
+     "integration_id": "string",
+     "ip_restrictions": "array",
+     "last_modified": null,
+     "lookback_hops": "integer",
+     "modified_at": null,
+     "o365_tenant_id": "string",
+     "regions": "array",
+     "require_tls_inbound": "boolean",
+     "require_tls_outbound": "boolean",
+     "spf_status": "string",
+     "status": "string",
+     "transport": "string",
+     "deletes": "array",
+     "patches": "array",
+     "posts": "array",
+     "puts": "array",
+     "total_pages": "number",
+     "certificate_authority": "string",
+     "created_on": "string",
+     "domain_id": "string",
+     "name": "string",
+     "validation_data": "object",
+     "verification_data": "object",
+     "zone_tag": "string",
+     "domain_name": "string",
+     "privacy_mode": "string",
+     "completed": "boolean",
+     "context": "object",
+     "error": "object",
+     "links": "object",
+     "state": "string",
+     "acknowledgements": "object",
+     "contact_extensions": "object",
+     "contacts": "object",
+     "years": "integer",
+     "cert_id": "string"
+    },
+    "evidence": [
+     "openapi/_original/cloudflare-accounts--openapi-original.yml#DELETE /accounts/{account_id}/pages/projects/{project_name}/domains/{domain_name}",
+     "openapi/_original/cloudflare-accounts--openapi-original.yml#DELETE /accounts/{account_id}/workers/domains/{domain_id}",
+     "openapi/_original/cloudflare-accounts--openapi-original.yml#GET /accounts/{account_id}/intel/domain",
+     "openapi/_original/cloudflare-accounts--openapi-original.yml#GET /accounts/{account_id}/intel/domain/bulk",
+     "openapi/_original/cloudflare-accounts--openapi-original.yml#GET /accounts/{account_id}/pages/projects/{project_name}/domains",
+     "openapi/_original/cloudflare-accounts--openapi-original.yml#GET /accounts/{account_id}/pages/projects/{project_name}/domains/{domain_name}",
+     "openapi/_original/cloudflare-accounts--openapi-original.yml#GET /accounts/{account_id}/registrar/domains",
+     "openapi/_original/cloudflare-accounts--openapi-original.yml#GET /accounts/{account_id}/registrar/domains/{domain_name}",
+     "openapi/_original/cloudflare-accounts--openapi-original.yml#GET /accounts/{account_id}/workers/domains",
+     "openapi/_original/cloudflare-accounts--openapi-original.yml#GET /accounts/{account_id}/workers/domains/{domain_id}",
+     "openapi/_original/cloudflare-accounts--openapi-original.yml#PATCH /accounts/{account_id}/pages/projects/{project_name}/domains/{domain_name}",
+     "openapi/_original/cloudflare-accounts--openapi-original.yml#POST /accounts/{account_id}/pages/projects/{project_name}/domains"
+    ]
+   },
+   "contabo": {
+    "segments": [
+     "domains"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "tenantId": "string",
+     "customerId": "string",
+     "domain": "string",
+     "domainDetails": null,
+     "status": "string",
+     "nameservers": "array",
+     "handles": null,
+     "registrationDate": "string",
+     "renewalDate": "string",
+     "terminationDate": "string",
+     "cancelDate": "string",
+     "dnssecKeys": "array",
+     "transferOutConfirmation": "boolean",
+     "statusError": "object",
+     "hostname": "array",
+     "ipV4": "array",
+     "ipV6": "array"
+    },
+    "evidence": [
+     "openapi/_original/contabo-api-redoc-embedded.json#GET /v1/domains",
+     "openapi/_original/contabo-api-redoc-embedded.json#GET /v1/domains/{domain}",
+     "openapi/_original/contabo-api-redoc-embedded.json#PATCH /v1/domains/{domain}",
+     "openapi/_original/contabo-api-redoc-embedded.json#POST /v1/domains",
+     "openapi/_original/contabo-openapi.yml#GET /v1/domains",
+     "openapi/_original/contabo-openapi.yml#GET /v1/domains/{domain}",
+     "openapi/_original/contabo-openapi.yml#PATCH /v1/domains/{domain}",
+     "openapi/_original/contabo-openapi.yml#POST /v1/domains"
+    ]
+   },
+   "domaintools": {
+    "segments": [
+     "domains"
+    ],
+    "operations": [
+     "PATCH collection"
+    ],
+    "properties": {
+     "state": "string",
+     "domain": "string",
+     "discovered_date": "string",
+     "changed_date": "string",
+     "id": "string",
+     "assigned_by": "string",
+     "assigned_date": "string",
+     "watchlist_domain_ids": "array",
+     "app_partner": "string",
+     "app_name": "string",
+     "app_version": "string"
+    },
+    "evidence": [
+     "openapi/_original/domaintools-iris-openapi.yml#PATCH /v1/iris-detect/domains/"
+    ]
+   },
+   "freestyle-sh": {
+    "segments": [
+     "domains"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "domain": "string",
+     "accountId": "string",
+     "createdAt": "string",
+     "id": "string",
+     "verifiedDns": "boolean",
+     "implicitlyOwned": "boolean",
+     "deployToDomain": "boolean",
+     "manageDns": "boolean",
+     "deployToSubdomains": "boolean",
+     "domains": "array"
+    },
+    "evidence": [
+     "openapi/_original/freestyle-domains-api-openapi.yml#GET /domains/v1/domains",
+     "openapi/_original/freestyle-sh-openapi.json#GET /domains",
+     "openapi/_original/freestyle-sh-openapi.json#GET /v5/domains"
+    ]
+   },
+   "frostbyte": {
+    "segments": [
+     "domains"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/frostbyte-agent-gateway-openapi.yml#GET /v1/frostbyte-domains/v1/domains"
+    ]
+   },
+   "gandi": {
+    "segments": [
+     "domains"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/domains-openapi-original.yml#DELETE /domains/{domain}",
+     "openapi/_original/domains-openapi-original.yml#GET /domains",
+     "openapi/_original/domains-openapi-original.yml#GET /domains/{domain}",
+     "openapi/_original/domains-openapi-original.yml#POST /domains",
+     "openapi/_original/livedns-openapi-original.yml#GET /domains",
+     "openapi/_original/livedns-openapi-original.yml#GET /domains/{fqdn}",
+     "openapi/_original/livedns-openapi-original.yml#PATCH /domains/{fqdn}",
+     "openapi/_original/livedns-openapi-original.yml#POST /domains"
+    ]
+   },
+   "godaddy": {
+    "segments": [
+     "domains",
+     "registrations"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "authCode": "string",
+     "contactAdmin": "object",
+     "contactBilling": "object",
+     "contactRegistrant": "object",
+     "contactTech": "object",
+     "createdAt": "string",
+     "deletedAt": "string",
+     "transferAwayEligibleAt": "string",
+     "domain": "string",
+     "domainId": "number",
+     "expirationProtected": "boolean",
+     "expires": "string",
+     "exposeWhois": "boolean",
+     "holdRegistrar": "boolean",
+     "locked": "boolean",
+     "nameServers": "array",
+     "privacy": "boolean",
+     "registrarCreatedAt": "string",
+     "renewAuto": "boolean",
+     "renewDeadline": "string",
+     "renewable": "boolean",
+     "status": "string",
+     "transferProtected": "boolean",
+     "exposeRegistrantOrganization": "boolean",
+     "subaccountId": "string",
+     "verifications": "object",
+     "consent": "object",
+     "expiresAt": "string",
+     "modifiedAt": "string",
+     "hostnames": "array",
+     "renewal": "object",
+     "contacts": "object",
+     "actions": "array",
+     "dnssecRecords": "array",
+     "registryStatusCodes": "array",
+     "registrationId": null,
+     "period": "integer",
+     "profileId": null,
+     "profile": null,
+     "quoteToken": null,
+     "price": null,
+     "fees": "array",
+     "operationId": null,
+     "updatedAt": null,
+     "links": "array"
+    },
+    "evidence": [
+     "openapi/_original/godaddy-domains-openapi.json#DELETE /v1/domains/{domain}",
+     "openapi/_original/godaddy-domains-openapi.json#GET /v1/domains",
+     "openapi/_original/godaddy-domains-openapi.json#GET /v1/domains/{domain}",
+     "openapi/_original/godaddy-domains-openapi.json#GET /v2/customers/{customerId}/domains/{domain}",
+     "openapi/_original/godaddy-domains-openapi.json#PATCH /v1/domains/{domain}",
+     "openapi/_original/godaddy-openapi.json#GET /registrations/{registrationId}",
+     "openapi/_original/godaddy-openapi.json#POST /registrations"
+    ]
+   },
+   "koyeb": {
+    "segments": [
+     "domains"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "organization_id": "string",
+     "name": "string",
+     "created_at": "string",
+     "updated_at": "string",
+     "status": "string",
+     "type": "string",
+     "app_id": "string",
+     "deployment_group": "string",
+     "verified_at": "string",
+     "intended_cname": "string",
+     "messages": "array",
+     "version": "string",
+     "cloudflare": "object",
+     "koyeb": "object",
+     "project_id": "string",
+     "subdomain": "string"
+    },
+    "evidence": [
+     "openapi/_original/koyeb-openapi.json#DELETE /v1/domains/{id}",
+     "openapi/_original/koyeb-openapi.json#GET /v1/domains",
+     "openapi/_original/koyeb-openapi.json#GET /v1/domains/{id}",
+     "openapi/_original/koyeb-openapi.json#PATCH /v1/domains/{id}",
+     "openapi/_original/koyeb-openapi.json#POST /v1/domains"
+    ]
+   },
+   "linode": {
+    "segments": [
+     "domains"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "axfr_ips": "array",
+     "description": "string",
+     "domain": "string",
+     "expire_sec": "integer",
+     "group": "string",
+     "id": "integer",
+     "master_ips": "array",
+     "refresh_sec": "integer",
+     "retry_sec": "integer",
+     "soa_email": "string",
+     "status": "string",
+     "tags": "array",
+     "ttl_sec": "integer",
+     "type": "string",
+     "page": "integer",
+     "pages": "integer",
+     "results": "integer",
+     "created": "string",
+     "updated": "string"
+    },
+    "evidence": [
+     "openapi/_original/linode-api-v4-official-openapi.json#DELETE /{apiVersion}/domains/{domainId}",
+     "openapi/_original/linode-api-v4-official-openapi.json#GET /{apiVersion}/domains",
+     "openapi/_original/linode-api-v4-official-openapi.json#GET /{apiVersion}/domains/{domainId}",
+     "openapi/_original/linode-api-v4-official-openapi.json#POST /{apiVersion}/domains",
+     "openapi/_original/linode-api-v4-official-openapi.json#PUT /{apiVersion}/domains/{domainId}",
+     "openapi/_original/linode-api-v4-openapi.yml#DELETE /domains/{domainId}",
+     "openapi/_original/linode-api-v4-openapi.yml#GET /domains",
+     "openapi/_original/linode-api-v4-openapi.yml#GET /domains/{domainId}",
+     "openapi/_original/linode-api-v4-openapi.yml#POST /domains",
+     "openapi/_original/linode-api-v4-openapi.yml#PUT /domains/{domainId}"
+    ]
+   },
+   "monacloud": {
+    "segments": [
+     "domains"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "host": "string",
+     "id": "string",
+     "name": "string",
+     "inet_id": null,
+     "zone_id": null,
+     "status": "string",
+     "name_servers": "array",
+     "expiry": null,
+     "app_id": null,
+     "sandbox": "boolean",
+     "expires_at": null,
+     "source": "string",
+     "registrar": null,
+     "created_at": null,
+     "years": "integer",
+     "registrant_id": null,
+     "spelling_confirmed": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/monacloud-api-openapi.json#GET /api/domains",
+     "openapi/_original/monacloud-api-openapi.json#POST /api/apps/{app_id}/domains",
+     "openapi/_original/monacloud-api-openapi.json#POST /api/domains",
+     "openapi/_original/monacloud-vn-openapi.json#POST /api/apps/{app_id}/domains"
+    ]
+   },
+   "nimbusnexus": {
+    "segments": [
+     "domains"
+    ],
+    "operations": [
+     "DELETE collection",
+     "GET collection",
+     "GET item",
+     "PATCH collection",
+     "POST collection"
+    ],
+    "properties": {
+     "success": "boolean",
+     "id": "string",
+     "name": null,
+     "description": null,
+     "enabled": null,
+     "domain_id": "string",
+     "domain_name": null,
+     "domain_description": null
+    },
+    "evidence": [
+     "openapi/_original/external.json#DELETE /api/v1/domains/",
+     "openapi/_original/external.json#GET /api/v1/domains/",
+     "openapi/_original/external.json#GET /api/v1/domains/{domain_id}",
+     "openapi/_original/external.json#PATCH /api/v1/domains/",
+     "openapi/_original/external.json#POST /api/v1/domains/"
+    ]
+   },
+   "openprovider": {
+    "segments": [
+     "domains"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "description": "string",
+     "domain": "string",
+     "email": "string",
+     "expiration_date": "string",
+     "handle": "string",
+     "is_suspended": "boolean",
+     "status": "string",
+     "abuse_details": "object",
+     "active_date": "string",
+     "additional_data": "object",
+     "admin_handle": "string",
+     "api_history": "array",
+     "application_id": "string",
+     "application_mode": "string",
+     "application_mode_expiration_date": "string",
+     "application_mode_title": "string",
+     "application_notice_id": "string",
+     "application_smd": "string",
+     "auth_code": "string",
+     "autorenew": "string",
+     "billing_handle": "string",
+     "can_renew": "boolean",
+     "comments": "string",
+     "comments_last_changed_at": "string",
+     "creation_date": "string",
+     "delete_status": "string",
+     "deleted_at": "string",
+     "dnssec": "string",
+     "dnssec_keys": "array",
+     "hard_quarantine_expiry_date": "string",
+     "has_active_sectigo_zone": "boolean",
+     "has_history": "boolean",
+     "history": "array",
+     "id": "integer",
+     "internal_auth_code": "string",
+     "is_abusive": "boolean",
+     "is_client_hold_enabled": "string",
+     "is_deleted": "boolean",
+     "is_dnssec_enabled": "boolean",
+     "is_hosted_whois": "boolean",
+     "is_lockable": "boolean",
+     "is_locked": "boolean",
+     "is_parked": "boolean",
+     "is_premium": "boolean",
+     "is_private_whois_allowed": "boolean",
+     "is_private_whois_enabled": "boolean",
+     "is_sectigo_dns_enabled": "boolean",
+     "is_spamexperts_enabled": "boolean",
+     "last_changed": "string",
+     "modify_owner_allowed": "boolean",
+     "name_servers": "array",
+     "ns_group": "string",
+     "ns_template_id": "integer",
+     "ns_template_name": "string",
+     "nsgroup_id": "integer",
+     "order_date": "string",
+     "owner": "object",
+     "owner_company_name": "string",
+     "owner_handle": "string",
+     "quarantine_expiration_date": "string",
+     "registry_expiration_date": "string",
+     "registry_statuses": "object",
+     "renew": "integer",
+     "renewal_date": "string",
+     "reseller_handle": "string",
+     "reseller_id": "integer",
+     "restorable_until": "string",
+     "scheduled_at": "string",
+     "scheduled_from": "string",
+     "soft_quarantine_expiry_date": "string",
+     "tech_handle": "string",
+     "trade_allowed": "boolean",
+     "trade_auth_code_required": "string",
+     "transfer_auth_code_required": "string",
+     "transfer_cancel_supported": "boolean",
+     "type": "string",
+     "unit": "string",
+     "use_domicile": "boolean",
+     "verification_email_exp_date": "string",
+     "verification_email_name": "string",
+     "verification_email_status": "string",
+     "verification_email_status_description": "string",
+     "whois_privacy_data": "object",
+     "activation_date": "string",
+     "accept_eap_fee": "number",
+     "accept_premium_fee": "number",
+     "is_easy_dmarc_enabled": "boolean",
+     "period": "integer",
+     "promo_code": "string",
+     "provider": "string",
+     "accept_update_fee": "number",
+     "force_registry_update": "boolean",
+     "remove_nses": "boolean",
+     "reset_auth_code": "boolean",
+     "success": "boolean",
+     "aliases": "array",
+     "bundle": "boolean",
+     "destinations": "array",
+     "domain_name": "string",
+     "products": "object",
+     "is_active": "boolean",
+     "order_id": "integer",
+     "records": "object",
+     "smtp_password": "string",
+     "user_email": "string",
+     "user_password": "string",
+     "with_outgoing_filter": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/openprovider-openapi.json#DELETE /v1beta/domains/{id}",
+     "openapi/_original/openprovider-openapi.json#DELETE /v1beta/spam-expert/domains/{domain_name}",
+     "openapi/_original/openprovider-openapi.json#GET /v1beta/customers/verifications/emails/domains",
+     "openapi/_original/openprovider-openapi.json#GET /v1beta/domains",
+     "openapi/_original/openprovider-openapi.json#GET /v1beta/domains/{id}",
+     "openapi/_original/openprovider-openapi.json#GET /v1beta/spam-expert/domains/{domain_name}",
+     "openapi/_original/openprovider-openapi.json#POST /v1beta/domains",
+     "openapi/_original/openprovider-openapi.json#POST /v1beta/spam-expert/domains",
+     "openapi/_original/openprovider-openapi.json#PUT /v1beta/domains/{id}",
+     "openapi/_original/openprovider-openapi.json#PUT /v1beta/spam-expert/domains/{domain_name}"
+    ]
+   },
+   "quantcdn": {
+    "segments": [
+     "domains"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "domain": "string",
+     "dns_engaged": "integer",
+     "dns_validation_records": "array",
+     "dns_go_live_records": "array"
+    },
+    "evidence": [
+     "openapi/_original/quantcdn-openapi.yml#DELETE /api/v2/organizations/{organization}/projects/{project}/domains/{domain}",
+     "openapi/_original/quantcdn-openapi.yml#GET /api/v2/organizations/{organization}/projects/{project}/domains",
+     "openapi/_original/quantcdn-openapi.yml#GET /api/v2/organizations/{organization}/projects/{project}/domains/{domain}",
+     "openapi/_original/quantcdn-openapi.yml#POST /api/v2/organizations/{organization}/projects/{project}/domains"
+    ]
+   },
+   "sakura-internet": {
+    "segments": [
+     "domains"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "createdAt": "string",
+     "updatedAt": "string",
+     "domainName": "string",
+     "certificateId": "string",
+     "certificateName": "string"
+    },
+    "evidence": [
+     "openapi/_original/apigw-api.yaml#DELETE /domains/{domainId}",
+     "openapi/_original/apigw-api.yaml#GET /domains",
+     "openapi/_original/apigw-api.yaml#POST /domains",
+     "openapi/_original/apigw-api.yaml#PUT /domains/{domainId}",
+     "openapi/_original/sakura-internet-apigw-openapi.yml#DELETE /domains/{domainId}",
+     "openapi/_original/sakura-internet-apigw-openapi.yml#GET /domains",
+     "openapi/_original/sakura-internet-apigw-openapi.yml#POST /domains",
+     "openapi/_original/sakura-internet-apigw-openapi.yml#PUT /domains/{domainId}"
+    ]
+   },
+   "shodan": {
+    "segments": [
+     "domain"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/shodan-rest-openapi.yml#GET /dns/domain/{domain}"
+    ]
+   },
+   "smithery-ai": {
+    "segments": [
+     "domains"
+    ],
+    "operations": [
+     "GET collection",
+     "PATCH item"
+    ],
+    "properties": {
+     "id": "string",
+     "type": "string",
+     "hostname": "string",
+     "subdomain": "string",
+     "createdAt": "string",
+     "updatedAt": "string"
+    },
+    "evidence": [
+     "openapi/_original/smithery-registry-api-openapi.yml#GET /servers/{qualifiedName}/domains",
+     "openapi/_original/smithery-registry-api-openapi.yml#PATCH /servers/{qualifiedName}/domains/{domainId}"
+    ]
+   },
+   "spaceship": {
+    "segments": [
+     "domains"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {
+     "name": null,
+     "unicodeName": null,
+     "isPremium": "boolean",
+     "autoRenew": "boolean",
+     "registrationDate": null,
+     "expirationDate": null,
+     "lifecycleStatus": null,
+     "verificationStatus": null,
+     "eppStatuses": "array",
+     "suspensions": "array",
+     "privacyProtection": null,
+     "nameservers": null,
+     "contacts": null,
+     "years": "integer",
+     "displayName": null,
+     "description": null,
+     "status": null,
+     "minPrice": null,
+     "binPrice": null,
+     "binPriceEnabled": "boolean",
+     "minPriceEnabled": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/spaceship-openapi-original.json#DELETE /v1/domains/{domain}",
+     "openapi/_original/spaceship-openapi-original.json#DELETE /v1/sellerhub/domains/{domain}",
+     "openapi/_original/spaceship-openapi-original.json#GET /v1/domains",
+     "openapi/_original/spaceship-openapi-original.json#GET /v1/domains/{domain}",
+     "openapi/_original/spaceship-openapi-original.json#GET /v1/sellerhub/domains",
+     "openapi/_original/spaceship-openapi-original.json#GET /v1/sellerhub/domains/{domain}",
+     "openapi/_original/spaceship-openapi-original.json#PATCH /v1/sellerhub/domains/{domain}",
+     "openapi/_original/spaceship-openapi-original.json#POST /v1/domains/{domain}",
+     "openapi/_original/spaceship-openapi-original.json#POST /v1/sellerhub/domains"
+    ]
+   },
+   "unstoppable-domains": {
+    "segments": [
+     "domains"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "@type": "string",
+     "records": null,
+     "name": "string",
+     "owner": "object",
+     "availability": "object",
+     "registration": null,
+     "blockchain": "string",
+     "operation": "object",
+     "price": "object",
+     "flags": "object",
+     "dns": "object",
+     "create": "array",
+     "update": "array",
+     "delete": "array",
+     "renewal": "object",
+     "transfer": "object",
+     "restoration": "object",
+     "constraints": "object",
+     "meta": "object"
+    },
+    "evidence": [
+     "openapi/_original/unstoppable-domains-partner-api-openapi.yaml#DELETE /domains/{name}",
+     "openapi/_original/unstoppable-domains-partner-api-openapi.yaml#GET /domains",
+     "openapi/_original/unstoppable-domains-partner-api-openapi.yaml#GET /domains/{name}",
+     "openapi/_original/unstoppable-domains-partner-api-openapi.yaml#GET /owners/{address}/domains",
+     "openapi/_original/unstoppable-domains-partner-api-openapi.yaml#GET /search/owners/domains",
+     "openapi/_original/unstoppable-domains-partner-api-openapi.yaml#GET /suggestions/domains",
+     "openapi/_original/unstoppable-domains-partner-api-openapi.yaml#PATCH /domains/{name}",
+     "openapi/_original/unstoppable-domains-partner-api-openapi.yaml#PATCH /external/domains/{name}",
+     "openapi/_original/unstoppable-domains-partner-api-openapi.yaml#POST /domains",
+     "openapi/_original/unstoppable-domains-partner-api-openapi.yaml#PUT /domains/{name}",
+     "openapi/_original/unstoppable-domains-partner-api-openapi.yaml#PUT /external/domains/{name}",
+     "openapi/_original/unstoppable-domains-reseller-api-openapi.yaml#GET /domains"
+    ]
+   },
+   "upsun": {
+    "segments": [
+     "domains"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "name": "string",
+     "attributes": "object",
+     "is_default": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/upsun-openapi-original.json#DELETE /projects/{projectId}/domains/{domainId}",
+     "openapi/_original/upsun-openapi-original.json#DELETE /projects/{projectId}/environments/{environmentId}/domains/{domainId}",
+     "openapi/_original/upsun-openapi-original.json#GET /projects/{projectId}/domains",
+     "openapi/_original/upsun-openapi-original.json#GET /projects/{projectId}/domains/{domainId}",
+     "openapi/_original/upsun-openapi-original.json#GET /projects/{projectId}/environments/{environmentId}/domains",
+     "openapi/_original/upsun-openapi-original.json#GET /projects/{projectId}/environments/{environmentId}/domains/{domainId}",
+     "openapi/_original/upsun-openapi-original.json#PATCH /projects/{projectId}/domains/{domainId}",
+     "openapi/_original/upsun-openapi-original.json#PATCH /projects/{projectId}/environments/{environmentId}/domains/{domainId}",
+     "openapi/_original/upsun-openapi-original.json#POST /projects/{projectId}/domains",
+     "openapi/_original/upsun-openapi-original.json#POST /projects/{projectId}/environments/{environmentId}/domains"
+    ]
+   }
+  },
+  "zone": {
+   "10web": {
+    "segments": [
+     "zone"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "nameservers": "string"
+    },
+    "evidence": [
+     "openapi/_original/10web-openapi.yaml#GET /v1/hosting/zone"
+    ]
+   },
+   "appwrite": {
+    "segments": [
+     "zone"
+    ],
+    "operations": [
+     "GET collection",
+     "PUT collection"
+    ],
+    "properties": {
+     "$id": "string",
+     "$createdAt": "string",
+     "$updatedAt": "string",
+     "domain": "string",
+     "registrar": "string",
+     "nameservers": "string",
+     "expire": "string",
+     "renewal": "string",
+     "autoRenewal": "boolean",
+     "renewalPrice": "integer",
+     "transferStatus": "string",
+     "teamId": "string",
+     "dnsRecords": "array",
+     "content": "string"
+    },
+    "evidence": [
+     "openapi/_original/appwrite-open-api3-latest.json#GET /domains/{domainId}/zone",
+     "openapi/_original/appwrite-open-api3-latest.json#GET /manager/domains/{domain}/zone",
+     "openapi/_original/appwrite-open-api3-latest.json#PUT /domains/{domainId}/zone"
+    ]
+   },
+   "cloudflare": {
+    "segments": [
+     "zones"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "errors": null,
+     "messages": null,
+     "result": "array",
+     "success": "boolean",
+     "result_info": null,
+     "count": "number",
+     "page": "number",
+     "per_page": "number",
+     "total_count": "number",
+     "account": "object",
+     "activated_on": "string",
+     "created_on": "string",
+     "development_mode": "number",
+     "id": "string",
+     "meta": "object",
+     "modified_on": "string",
+     "name": "string",
+     "original_dnshost": "string",
+     "original_name_servers": "array",
+     "original_registrar": "string",
+     "owner": "object",
+     "vanity_name_servers": "array",
+     "type": "string",
+     "paused": "boolean",
+     "plan": "object",
+     "total_pages": "number",
+     "cname_suffix": "string",
+     "name_servers": "array",
+     "permissions": "array",
+     "status": "string",
+     "tenant": "object",
+     "tenant_unit": "object",
+     "verification_key": "string"
+    },
+    "evidence": [
+     "openapi/_original/cloudflare-accounts--openapi-original.yml#DELETE /accounts/{account_id}/addressing/address_maps/{address_map_id}/zones/{zone_id}",
+     "openapi/_original/cloudflare-accounts--openapi-original.yml#PUT /accounts/{account_id}/addressing/address_maps/{address_map_id}/zones/{zone_id}",
+     "openapi/_original/cloudflare-openapi-original.yml#DELETE /accounts/{account_id}/addressing/address_maps/{address_map_id}/zones/{zone_id}",
+     "openapi/_original/cloudflare-openapi-original.yml#DELETE /zones/{zone_id}",
+     "openapi/_original/cloudflare-openapi-original.yml#GET /zones",
+     "openapi/_original/cloudflare-openapi-original.yml#GET /zones/{zone_id}",
+     "openapi/_original/cloudflare-openapi-original.yml#PATCH /zones/{zone_id}",
+     "openapi/_original/cloudflare-openapi-original.yml#POST /zones",
+     "openapi/_original/cloudflare-openapi-original.yml#PUT /accounts/{account_id}/addressing/address_maps/{address_map_id}/zones/{zone_id}",
+     "openapi/_original/cloudflare-openapi.json#DELETE /accounts/{account_id}/addressing/address_maps/{address_map_id}/zones/{member_zone_id}",
+     "openapi/_original/cloudflare-openapi.json#DELETE /zones/{zone_id}",
+     "openapi/_original/cloudflare-openapi.json#GET /zones"
+    ]
+   },
+   "contabo": {
+    "segments": [
+     "zones"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "tenantId": "string",
+     "customerId": "string",
+     "zoneName": "string"
+    },
+    "evidence": [
+     "openapi/_original/contabo-api-redoc-embedded.json#DELETE /v1/dns/zones/{zoneName}",
+     "openapi/_original/contabo-api-redoc-embedded.json#GET /v1/dns/zones",
+     "openapi/_original/contabo-api-redoc-embedded.json#GET /v1/dns/zones/{zoneName}",
+     "openapi/_original/contabo-api-redoc-embedded.json#POST /v1/dns/zones",
+     "openapi/_original/contabo-openapi.yml#DELETE /v1/dns/zones/{zoneName}",
+     "openapi/_original/contabo-openapi.yml#GET /v1/dns/zones",
+     "openapi/_original/contabo-openapi.yml#GET /v1/dns/zones/{zoneName}",
+     "openapi/_original/contabo-openapi.yml#POST /v1/dns/zones"
+    ]
+   },
+   "hetzner": {
+    "segments": [
+     "zones"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "created": "string",
+     "primary_nameservers": "array",
+     "labels": "object",
+     "protection": "object",
+     "ttl": "integer",
+     "status": "string",
+     "record_count": "integer",
+     "authoritative_nameservers": "object",
+     "registrar": "string",
+     "mode": "string",
+     "zone": null,
+     "action": "object",
+     "rrsets": "array",
+     "zonefile": "string",
+     "command": "string",
+     "started": "string",
+     "finished": "string",
+     "progress": "integer",
+     "resources": "array",
+     "error": "object"
+    },
+    "evidence": [
+     "openapi/_original/hetzner-openapi.yml#DELETE /zones/{id_or_name}",
+     "openapi/_original/hetzner-openapi.yml#GET /zones",
+     "openapi/_original/hetzner-openapi.yml#GET /zones/{id_or_name}",
+     "openapi/_original/hetzner-openapi.yml#POST /zones",
+     "openapi/_original/hetzner-openapi.yml#PUT /zones/{id_or_name}"
+    ]
+   },
+   "nimbusnexus": {
+    "segments": [
+     "zones"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": null,
+     "pool_id": null,
+     "project_id": null,
+     "name": null,
+     "email": null,
+     "ttl": null,
+     "serial": null,
+     "status": null,
+     "active": null,
+     "description": null,
+     "masters": null,
+     "type": null,
+     "transfered_at": null,
+     "version": null,
+     "created_at": null,
+     "updated_at": null,
+     "shared": null,
+     "admin_domain": null,
+     "admin_project": null,
+     "attributes": null
+    },
+    "evidence": [
+     "openapi/_original/external.json#DELETE /api/v1/zones/{zone_id}",
+     "openapi/_original/external.json#GET /api/v1/zones/",
+     "openapi/_original/external.json#GET /api/v1/zones/{zone_id}",
+     "openapi/_original/external.json#POST /api/v1/zones/",
+     "openapi/_original/external.json#PUT /api/v1/zones/{zone_id}"
+    ]
+   },
+   "openprovider": {
+    "segments": [
+     "zones"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "active": "boolean",
+     "creation_date": "string",
+     "dnskey": "string",
+     "history": "array",
+     "id": "integer",
+     "ip": "string",
+     "is_deleted": "boolean",
+     "is_shadow": "boolean",
+     "is_spamexperts_enabled": "boolean",
+     "modification_date": "string",
+     "name": "string",
+     "premium_dns": "object",
+     "provider": "string",
+     "records": "array",
+     "reseller_id": "integer",
+     "type": "string",
+     "success": "boolean",
+     "domain": "object",
+     "master_ip": "string",
+     "secured": "boolean",
+     "template_name": "string"
+    },
+    "evidence": [
+     "openapi/_original/openprovider-openapi.json#DELETE /v1beta/dns/zones/{name}",
+     "openapi/_original/openprovider-openapi.json#GET /v1beta/dns/zones",
+     "openapi/_original/openprovider-openapi.json#GET /v1beta/dns/zones/{name}",
+     "openapi/_original/openprovider-openapi.json#POST /v1beta/dns/zones",
+     "openapi/_original/openprovider-openapi.json#PUT /v1beta/dns/zones/{name}"
+    ]
+   }
+  },
+  "dns_record": {
+   "10web": {
+    "segments": [
+     "records"
+    ],
+    "operations": [
+     "GET collection",
+     "POST item"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "value": "string",
+     "type": "string",
+     "ttl": "integer",
+     "priority": "integer",
+     "port": "integer",
+     "weight": "integer",
+     "status": "string"
+    },
+    "evidence": [
+     "openapi/_original/10web-openapi.yaml#GET /v1/hosting/zone/{zone_id}/records",
+     "openapi/_original/10web-openapi.yaml#POST /v1/hosting/zone/{zone_id}/records/{record_id}"
+    ]
+   },
+   "amazon-route-53": {
+    "segments": [
+     "rrset"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/amazon-route-53-openapi.yml#GET /2013-04-01/hostedzone/{Id}/rrset",
+     "openapi/_original/amazon-route-53-openapi.yml#POST /2013-04-01/hostedzone/{Id}/rrset"
+    ]
+   },
+   "appwrite": {
+    "segments": [
+     "records"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "$id": "string",
+     "$createdAt": "string",
+     "$updatedAt": "string",
+     "type": "string",
+     "name": "string",
+     "value": "string",
+     "ttl": "integer",
+     "priority": "integer",
+     "lock": "boolean",
+     "weight": "integer",
+     "port": "integer",
+     "comment": "string"
+    },
+    "evidence": [
+     "openapi/_original/appwrite-open-api3-latest.json#DELETE /domains/{domainId}/records/{recordId}",
+     "openapi/_original/appwrite-open-api3-latest.json#GET /domains/{domainId}/records",
+     "openapi/_original/appwrite-open-api3-latest.json#GET /domains/{domainId}/records/{recordId}",
+     "openapi/_original/appwrite-open-api3-latest.json#GET /manager/domains/records"
+    ]
+   },
+   "bunny-net": {
+    "segments": [
+     "records"
+    ],
+    "operations": [
+     "DELETE item",
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {
+     "Id": "integer",
+     "Type": "integer",
+     "Ttl": "integer",
+     "Value": "string",
+     "Name": "string",
+     "Weight": "integer",
+     "Priority": "integer",
+     "Port": "integer",
+     "Flags": "integer",
+     "Tag": "string",
+     "Accelerated": "boolean",
+     "AcceleratedPullZoneId": "integer",
+     "Disabled": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/bunny-net-openapi.yml#DELETE /dnszone/{id}/records/{recordId}",
+     "openapi/_original/bunny-net-openapi.yml#POST /dnszone/{id}/records",
+     "openapi/_original/bunny-net-openapi.yml#POST /dnszone/{id}/records/{recordId}"
+    ]
+   },
+   "cloudflare": {
+    "segments": [
+     "dns_records"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "zone_id": "string",
+     "zone_name": "string",
+     "type": "string",
+     "name": "string",
+     "content": "string",
+     "ttl": "integer",
+     "proxied": "boolean",
+     "proxiable": "boolean",
+     "locked": "boolean",
+     "comment": "string",
+     "tags": "array",
+     "created_on": "string",
+     "modified_on": "string",
+     "priority": "integer",
+     "deletes": "array",
+     "patches": "array",
+     "puts": "array",
+     "posts": "array",
+     "errors": "array",
+     "messages": "array",
+     "result": "array",
+     "success": "boolean",
+     "result_info": "object",
+     "meta": "object",
+     "count": "number",
+     "page": "number",
+     "per_page": "number",
+     "total_count": "number",
+     "total_pages": "number",
+     "comment_modified_on": "string",
+     "tags_modified_on": "string",
+     "settings": "object",
+     "private_routing": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/cloudflare-dns-openapi.yml#DELETE /zones/{zone_id}/dns_records/{dns_record_id}",
+     "openapi/_original/cloudflare-dns-openapi.yml#GET /zones/{zone_id}/dns_records",
+     "openapi/_original/cloudflare-dns-openapi.yml#GET /zones/{zone_id}/dns_records/{dns_record_id}",
+     "openapi/_original/cloudflare-dns-openapi.yml#PATCH /zones/{zone_id}/dns_records/{dns_record_id}",
+     "openapi/_original/cloudflare-dns-openapi.yml#POST /zones/{zone_id}/dns_records",
+     "openapi/_original/cloudflare-dns-openapi.yml#POST /zones/{zone_id}/dns_records/batch",
+     "openapi/_original/cloudflare-dns-openapi.yml#PUT /zones/{zone_id}/dns_records/{dns_record_id}",
+     "openapi/_original/cloudflare-openapi-original.yml#DELETE /zones/{zone_id}/dns_records/{dns_record_id}",
+     "openapi/_original/cloudflare-openapi-original.yml#GET /zones/{zone_id}/dns_records",
+     "openapi/_original/cloudflare-openapi-original.yml#GET /zones/{zone_id}/dns_records/{dns_record_id}",
+     "openapi/_original/cloudflare-openapi-original.yml#PATCH /zones/{zone_id}/dns_records/{dns_record_id}",
+     "openapi/_original/cloudflare-openapi-original.yml#POST /zones/{zone_id}/dns_records"
+    ]
+   },
+   "contabo": {
+    "segments": [
+     "records"
+    ],
+    "operations": [
+     "DELETE collection",
+     "DELETE item",
+     "GET collection",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "tenantId": "string",
+     "customerId": "string",
+     "recordId": "number",
+     "name": "string",
+     "type": "string",
+     "ttl": "number",
+     "prio": "number",
+     "data": "string",
+     "port": "number",
+     "weight": "number",
+     "flag": "number",
+     "tag": "string",
+     "failedIds": "array",
+     "recordIds": "array"
+    },
+    "evidence": [
+     "openapi/_original/contabo-api-redoc-embedded.json#DELETE /v1/dns/zones/{zoneName}/records/bulk",
+     "openapi/_original/contabo-api-redoc-embedded.json#DELETE /v1/dns/zones/{zoneName}/records/{recordId}",
+     "openapi/_original/contabo-api-redoc-embedded.json#GET /v1/dns/zones/{zoneName}/records",
+     "openapi/_original/contabo-api-redoc-embedded.json#PATCH /v1/dns/zones/{zoneName}/records/{recordId}",
+     "openapi/_original/contabo-api-redoc-embedded.json#POST /v1/dns/zones/{zoneName}/records",
+     "openapi/_original/contabo-openapi.yml#DELETE /v1/dns/zones/{zoneName}/records/bulk",
+     "openapi/_original/contabo-openapi.yml#DELETE /v1/dns/zones/{zoneName}/records/{recordId}",
+     "openapi/_original/contabo-openapi.yml#GET /v1/dns/zones/{zoneName}/records",
+     "openapi/_original/contabo-openapi.yml#PATCH /v1/dns/zones/{zoneName}/records/{recordId}",
+     "openapi/_original/contabo-openapi.yml#POST /v1/dns/zones/{zoneName}/records"
+    ]
+   },
+   "freestyle-sh": {
+    "segments": [
+     "records"
+    ],
+    "operations": [
+     "DELETE collection",
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "kind": "string",
+     "name": "string",
+     "value": "string",
+     "ttl": "string",
+     "priority": [
+      "integer",
+      "null"
+     ],
+     "managed": "boolean",
+     "domain": "string",
+     "record": "object",
+     "message": "string"
+    },
+    "evidence": [
+     "openapi/_original/freestyle-domains-api-openapi.yml#DELETE /dns/v1/records",
+     "openapi/_original/freestyle-domains-api-openapi.yml#GET /dns/v1/records",
+     "openapi/_original/freestyle-domains-api-openapi.yml#POST /dns/v1/records"
+    ]
+   },
+   "frostbyte": {
+    "segments": [
+     "records"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/frostbyte-agent-gateway-openapi.yml#DELETE /v1/frostbyte-domains/v1/dns/records/{id}",
+     "openapi/_original/frostbyte-agent-gateway-openapi.yml#GET /v1/frostbyte-domains/v1/dns/records",
+     "openapi/_original/frostbyte-agent-gateway-openapi.yml#POST /v1/frostbyte-domains/v1/dns/records",
+     "openapi/_original/frostbyte-agent-gateway-openapi.yml#PUT /v1/frostbyte-domains/v1/dns/records/{id}"
+    ]
+   },
+   "gandi": {
+    "segments": [
+     "records"
+    ],
+    "operations": [
+     "DELETE collection",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/livedns-openapi-original.yml#DELETE /domains/{fqdn}/records",
+     "openapi/_original/livedns-openapi-original.yml#GET /domains/{fqdn}/records",
+     "openapi/_original/livedns-openapi-original.yml#GET /domains/{fqdn}/records/{rrset_name}",
+     "openapi/_original/livedns-openapi-original.yml#POST /domains/{fqdn}/records",
+     "openapi/_original/livedns-openapi-original.yml#PUT /domains/{fqdn}/records"
+    ]
+   },
+   "godaddy": {
+    "segments": [
+     "dns-records",
+     "records"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "PATCH collection",
+     "POST collection",
+     "PUT collection",
+     "PUT item"
+    ],
+    "properties": {
+     "data": "string",
+     "name": "string",
+     "port": "integer",
+     "priority": "integer",
+     "protocol": "string",
+     "service": "string",
+     "ttl": "integer",
+     "type": "string",
+     "weight": "integer",
+     "recordId": "string",
+     "flag": "integer",
+     "tag": "string"
+    },
+    "evidence": [
+     "openapi/_original/godaddy-domains-openapi.json#PATCH /v1/domains/{domain}/records",
+     "openapi/_original/godaddy-domains-openapi.json#PUT /v1/domains/{domain}/records",
+     "openapi/_original/godaddy-domains-openapi.json#PUT /v1/domains/{domain}/records/{type}",
+     "openapi/_original/godaddy-openapi.json#DELETE /zones/{zone}/dns-records/{recordId}",
+     "openapi/_original/godaddy-openapi.json#GET /zones/{zone}/dns-records",
+     "openapi/_original/godaddy-openapi.json#POST /zones/{zone}/dns-records",
+     "openapi/_original/godaddy-openapi.json#PUT /zones/{zone}/dns-records/{recordId}"
+    ]
+   },
+   "google-cloud-dns": {
+    "segments": [
+     "rrsets"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "name": "string",
+     "type": "string",
+     "ttl": "integer",
+     "rrdatas": "array",
+     "signatureRrdatas": "array"
+    },
+    "evidence": [
+     "openapi/_original/dns-openapi.yml#GET /projects/{project}/managedZones/{managedZone}/rrsets",
+     "openapi/_original/dns-openapi.yml#POST /projects/{project}/managedZones/{managedZone}/rrsets"
+    ]
+   },
+   "hetzner": {
+    "segments": [
+     "rrsets"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "type": "string",
+     "ttl": "integer",
+     "labels": "object",
+     "protection": "object",
+     "records": "array",
+     "zone": "integer",
+     "rrset": "object",
+     "action": "object",
+     "value": "string",
+     "comment": "string"
+    },
+    "evidence": [
+     "openapi/_original/hetzner-openapi.yml#GET /zones/{id_or_name}/rrsets",
+     "openapi/_original/hetzner-openapi.yml#POST /zones/{id_or_name}/rrsets"
+    ]
+   },
+   "linode": {
+    "segments": [
+     "records"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "created": "string",
+     "id": "integer",
+     "name": "string",
+     "port": "integer",
+     "priority": "integer",
+     "protocol": "string",
+     "service": "string",
+     "tag": "string",
+     "target": "string",
+     "ttl_sec": "integer",
+     "type": "string",
+     "updated": "string",
+     "weight": "integer",
+     "page": "integer",
+     "pages": "integer",
+     "results": "integer"
+    },
+    "evidence": [
+     "openapi/_original/linode-api-v4-official-openapi.json#DELETE /{apiVersion}/domains/{domainId}/records/{recordId}",
+     "openapi/_original/linode-api-v4-official-openapi.json#GET /{apiVersion}/domains/{domainId}/records",
+     "openapi/_original/linode-api-v4-official-openapi.json#GET /{apiVersion}/domains/{domainId}/records/{recordId}",
+     "openapi/_original/linode-api-v4-official-openapi.json#POST /{apiVersion}/domains/{domainId}/records",
+     "openapi/_original/linode-api-v4-official-openapi.json#PUT /{apiVersion}/domains/{domainId}/records/{recordId}",
+     "openapi/_original/linode-api-v4-openapi.yml#GET /domains/{domainId}/records",
+     "openapi/_original/linode-api-v4-openapi.yml#POST /domains/{domainId}/records"
+    ]
+   },
+   "monacloud": {
+    "segments": [
+     "records"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "type": "string",
+     "name": "string",
+     "data": "string",
+     "ttl": null,
+     "priority": null
+    },
+    "evidence": [
+     "openapi/_original/monacloud-api-openapi.json#DELETE /api/domains/{domain_id}/records/{record_id}",
+     "openapi/_original/monacloud-api-openapi.json#GET /api/domains/{domain_id}/records",
+     "openapi/_original/monacloud-api-openapi.json#POST /api/domains/{domain_id}/records",
+     "openapi/_original/monacloud-api-openapi.json#PUT /api/domains/{domain_id}/records/{record_id}"
+    ]
+   },
+   "nimbusnexus": {
+    "segments": [
+     "recordsets",
+     "records"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": null,
+     "zone_id": null,
+     "project_id": null,
+     "name": null,
+     "zone_name": null,
+     "type": null,
+     "records": "array",
+     "description": null,
+     "ttl": null,
+     "status": null,
+     "action": null,
+     "version": null,
+     "created_at": null,
+     "updated_at": null,
+     "links": null,
+     "address": "string",
+     "ptrdname": null
+    },
+    "evidence": [
+     "openapi/_original/external.json#DELETE /api/v1/zones/{zone_id}/recordsets/{recordset_id}",
+     "openapi/_original/external.json#GET /api/v1/ptr/records/",
+     "openapi/_original/external.json#GET /api/v1/ptr/records/{floatingip_id}",
+     "openapi/_original/external.json#GET /api/v1/recordsets/",
+     "openapi/_original/external.json#GET /api/v1/zones/{zone_id}/recordsets/",
+     "openapi/_original/external.json#GET /api/v1/zones/{zone_id}/recordsets/{recordset_id}",
+     "openapi/_original/external.json#POST /api/v1/zones/{zone_id}/recordsets/",
+     "openapi/_original/external.json#PUT /api/v1/zones/{zone_id}/recordsets/{recordset_id}"
+    ]
+   },
+   "openprovider": {
+    "segments": [
+     "records"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "creation_date": "string",
+     "ip": "string",
+     "modification_date": "string",
+     "name": "string",
+     "prio": "integer",
+     "ttl": "integer",
+     "type": "string",
+     "value": "string"
+    },
+    "evidence": [
+     "openapi/_original/openprovider-openapi.json#GET /v1beta/dns/zones/{name}/records"
+    ]
+   },
+   "spaceship": {
+    "segments": [
+     "records"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET item",
+     "PUT item"
+    ],
+    "properties": {
+     "type": "string",
+     "name": null,
+     "ttl": "integer",
+     "group": "object"
+    },
+    "evidence": [
+     "openapi/_original/spaceship-openapi-original.json#DELETE /v1/dns/records/{domain}",
+     "openapi/_original/spaceship-openapi-original.json#GET /v1/dns/records/{domain}",
+     "openapi/_original/spaceship-openapi-original.json#PUT /v1/dns/records/{domain}"
+    ]
+   },
+   "unstoppable-domains": {
+    "segments": [
+     "records"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "@type": "string",
+     "subName": "string",
+     "type": "string",
+     "values": "array",
+     "ttl": "number",
+     "readonly": "object",
+     "id": "string",
+     "operation": "object",
+     "$upsert": "string",
+     "$forceCompatibility": "boolean",
+     "domain": "string",
+     "records": "object"
+    },
+    "evidence": [
+     "openapi/_original/unstoppable-domains-reseller-api-openapi.yaml#DELETE /domains/{name}/dns/records/{id}",
+     "openapi/_original/unstoppable-domains-reseller-api-openapi.yaml#GET /domains/{name}/dns/records",
+     "openapi/_original/unstoppable-domains-reseller-api-openapi.yaml#PATCH /domains/{name}/dns/records/{id}",
+     "openapi/_original/unstoppable-domains-reseller-api-openapi.yaml#POST /domains/{name}/dns/records",
+     "openapi/_original/unstoppable-domains-resolution-api-openapi.yaml#GET /records"
+    ]
+   }
+  }
+ },
+ "naming": {
+  "path_segment": {
+   "lower": [
+    "10web",
+    "agentspodium-com",
+    "amazon-amplify",
+    "amazon-lightsail",
+    "amazon-route-53",
+    "apifreaks-api-hub-for-developers",
+    "apiverve",
+    "appwrite",
+    "automattic",
+    "bookmyhost",
+    "brewpage",
+    "broke2builtai-com",
+    "bunny-net",
+    "catchdoms",
+    "cisco-umbrella",
+    "cloudflare",
+    "contabo",
+    "coredns",
+    "cpanel",
+    "d3",
+    "dns-check",
+    "dnsfilter",
+    "domaintools",
+    "domscan",
+    "done",
+    "edgegap",
+    "fly-io",
+    "freestyle-sh",
+    "frostbyte",
+    "gandi",
+    "geekflare",
+    "godaddy",
+    "google-cloud-dns",
+    "google-firebase",
+    "hathora",
+    "hetzner",
+    "horizoniq",
+    "infoblox",
+    "karma-domains",
+    "koyeb",
+    "leaseweb",
+    "linode",
+    "mcp360",
+    "microsoft-azure-private-link",
+    "monacloud",
+    "nacos",
+    "networkcalc",
+    "nimbusnexus",
+    "openprovider",
+    "ovh-cloud",
+    "pi-hole",
+    "quantcdn",
+    "render",
+    "sakura-internet",
+    "servghost-agent-api",
+    "sevalla",
+    "shodan",
+    "smithery-ai",
+    "spaceship",
+    "uchecker",
+    "unstoppable-domains",
+    "upsun",
+    "vercel",
+    "whisper-online",
+    "whoisfreaks"
+   ],
+   "kebab-case": [
+    "10web",
+    "agentspodium-com",
+    "amazon-lightsail",
+    "apifreaks-api-hub-for-developers",
+    "appwrite",
+    "automattic",
+    "bookmyhost",
+    "brewpage",
+    "broke2builtai-com",
+    "catchdoms",
+    "cisco-umbrella",
+    "cloudflare",
+    "completedns",
+    "contabo",
+    "domaintools",
+    "domscan",
+    "done",
+    "edgegap",
+    "freestyle-sh",
+    "frostbyte",
+    "godaddy",
+    "horizoniq",
+    "karma-domains",
+    "koyeb",
+    "linode",
+    "mcp360",
+    "monacloud",
+    "nimbusnexus",
+    "openprovider",
+    "quantcdn",
+    "render",
+    "sakura-internet",
+    "sevalla",
+    "shodan",
+    "smithery-ai",
+    "spaceship",
+    "uchecker",
+    "unstoppable-domains",
+    "upsun",
+    "whisper-online",
+    "whoisfreaks"
+   ],
+   "other": [
+    "10web",
+    "amazon-lightsail",
+    "amazon-route-53",
+    "amazon-route53-resolver",
+    "automattic",
+    "bookmyhost",
+    "brewpage",
+    "cloudflare",
+    "cpanel",
+    "edgegap",
+    "frostbyte",
+    "google-firebase",
+    "infoblox",
+    "microsoft-azure-private-link",
+    "monacloud",
+    "nimbusnexus",
+    "smithery-ai",
+    "upsun",
+    "whisper-online",
+    "whmcs"
+   ],
+   "snake_case": [
+    "10web",
+    "appwrite",
+    "bookmyhost",
+    "cisco-umbrella",
+    "cloudflare",
+    "cpanel",
+    "dnsfilter",
+    "domaintools",
+    "fly-io",
+    "hetzner",
+    "infoblox",
+    "karma-domains",
+    "koyeb",
+    "linode",
+    "mcp360",
+    "nimbusnexus",
+    "sakura-internet",
+    "unstoppable-domains",
+    "upsun"
+   ],
+   "camelCase": [
+    "amazon-lightsail",
+    "appwrite",
+    "bunny-net",
+    "cisco-umbrella",
+    "cloudflare",
+    "contabo",
+    "cpanel",
+    "godaddy",
+    "google-cloud-dns",
+    "leaseweb",
+    "microsoft-azure-private-link",
+    "ovh-cloud"
+   ],
+   "PascalCase": [
+    "amazon-lightsail",
+    "bookmyhost",
+    "cisco-umbrella",
+    "cloudflare",
+    "cpanel"
+   ]
+  },
+  "path_param": {
+   "lower": [
+    "agentspodium-com",
+    "amazon-lightsail",
+    "appwrite",
+    "bookmyhost",
+    "brewpage",
+    "broke2builtai-com",
+    "bunny-net",
+    "catchdoms",
+    "cisco-umbrella",
+    "cloudflare",
+    "completedns",
+    "contabo",
+    "d3",
+    "dnsfilter",
+    "domaintools",
+    "domscan",
+    "edgegap",
+    "fly-io",
+    "freestyle-sh",
+    "frostbyte",
+    "gandi",
+    "godaddy",
+    "google-cloud-dns",
+    "google-firebase",
+    "hetzner",
+    "infoblox",
+    "koyeb",
+    "leaseweb",
+    "linode",
+    "microsoft-azure-private-link",
+    "monacloud",
+    "networkcalc",
+    "nimbusnexus",
+    "openprovider",
+    "ovh-cloud",
+    "pi-hole",
+    "quantcdn",
+    "render",
+    "sakura-internet",
+    "servghost-agent-api",
+    "sevalla",
+    "shodan",
+    "smithery-ai",
+    "spaceship",
+    "uchecker",
+    "unstoppable-domains",
+    "upsun",
+    "whisper-online"
+   ],
+   "camelCase": [
+    "amazon-amplify",
+    "amazon-lightsail",
+    "appwrite",
+    "brewpage",
+    "bunny-net",
+    "cisco-umbrella",
+    "cloudflare",
+    "contabo",
+    "d3",
+    "domaintools",
+    "freestyle-sh",
+    "godaddy",
+    "google-cloud-dns",
+    "google-firebase",
+    "hathora",
+    "horizoniq",
+    "leaseweb",
+    "linode",
+    "microsoft-azure-private-link",
+    "ovh-cloud",
+    "quantcdn",
+    "render",
+    "sakura-internet",
+    "sevalla",
+    "shodan",
+    "smithery-ai",
+    "spaceship",
+    "uchecker",
+    "unstoppable-domains",
+    "upsun",
+    "vercel"
+   ],
+   "snake_case": [
+    "10web",
+    "appwrite",
+    "automattic",
+    "bookmyhost",
+    "cloudflare",
+    "dns-check",
+    "dnsfilter",
+    "domscan",
+    "edgegap",
+    "fly-io",
+    "freestyle-sh",
+    "gandi",
+    "hetzner",
+    "karma-domains",
+    "koyeb",
+    "monacloud",
+    "nimbusnexus",
+    "openprovider",
+    "quantcdn",
+    "sakura-internet",
+    "upsun"
+   ],
+   "other": [
+    "cloudflare",
+    "freestyle-sh",
+    "linode"
+   ],
+   "PascalCase": [
+    "amazon-route-53",
+    "leaseweb"
+   ],
+   "kebab-case": [
+    "cloudflare",
+    "godaddy"
+   ]
+  },
+  "property": {
+   "lower": [
+    "10web",
+    "appwrite",
+    "catchdoms",
+    "cisco-umbrella",
+    "cloudflare",
+    "contabo",
+    "domaintools",
+    "freestyle-sh",
+    "godaddy",
+    "google-cloud-dns",
+    "hetzner",
+    "koyeb",
+    "linode",
+    "monacloud",
+    "nimbusnexus",
+    "openprovider",
+    "quantcdn",
+    "sakura-internet",
+    "smithery-ai",
+    "spaceship",
+    "unstoppable-domains",
+    "upsun"
+   ],
+   "camelCase": [
+    "amazon-amplify",
+    "appwrite",
+    "cisco-umbrella",
+    "contabo",
+    "freestyle-sh",
+    "godaddy",
+    "google-cloud-dns",
+    "sakura-internet",
+    "smithery-ai",
+    "spaceship",
+    "unstoppable-domains"
+   ],
+   "snake_case": [
+    "catchdoms",
+    "cloudflare",
+    "domaintools",
+    "hetzner",
+    "koyeb",
+    "linode",
+    "monacloud",
+    "nimbusnexus",
+    "openprovider",
+    "quantcdn",
+    "upsun"
+   ],
+   "other": [
+    "appwrite",
+    "unstoppable-domains"
+   ],
+   "PascalCase": [
+    "bunny-net"
+   ]
+  },
+  "query_param": {
+   "lower": [
+    "10web",
+    "agentspodium-com",
+    "amazon-lightsail",
+    "amazon-route-53",
+    "apifreaks-api-hub-for-developers",
+    "apiverve",
+    "appwrite",
+    "automattic",
+    "bookmyhost",
+    "brewpage",
+    "broke2builtai-com",
+    "bunny-net",
+    "catchdoms",
+    "cisco-umbrella",
+    "cloudflare",
+    "completedns",
+    "contabo",
+    "cpanel",
+    "d3",
+    "dnsfilter",
+    "domaintools",
+    "domscan",
+    "edgegap",
+    "fly-io",
+    "freestyle-sh",
+    "gandi",
+    "godaddy",
+    "google-cloud-dns",
+    "google-firebase",
+    "hathora",
+    "hetzner",
+    "horizoniq",
+    "infoblox",
+    "karma-domains",
+    "koyeb",
+    "leaseweb",
+    "linode",
+    "mcp360",
+    "monacloud",
+    "nacos",
+    "nimbusnexus",
+    "openprovider",
+    "ovh-cloud",
+    "quantcdn",
+    "render",
+    "sakura-internet",
+    "servghost-agent-api",
+    "sevalla",
+    "shodan",
+    "smithery-ai",
+    "spaceship",
+    "uchecker",
+    "unstoppable-domains",
+    "upsun",
+    "whisper-online",
+    "whoapi",
+    "whoisfreaks"
+   ],
+   "snake_case": [
+    "10web",
+    "apifreaks-api-hub-for-developers",
+    "apiverve",
+    "appwrite",
+    "automattic",
+    "bookmyhost",
+    "catchdoms",
+    "cisco-umbrella",
+    "cloudflare",
+    "cpanel",
+    "dnsfilter",
+    "domaintools",
+    "domscan",
+    "edgegap",
+    "fly-io",
+    "hetzner",
+    "infoblox",
+    "karma-domains",
+    "koyeb",
+    "linode",
+    "mcp360",
+    "monacloud",
+    "nimbusnexus",
+    "openprovider",
+    "quantcdn",
+    "sakura-internet",
+    "shodan",
+    "uchecker",
+    "upsun"
+   ],
+   "camelCase": [
+    "amazon-amplify",
+    "amazon-lightsail",
+    "apifreaks-api-hub-for-developers",
+    "apiverve",
+    "appwrite",
+    "bookmyhost",
+    "bunny-net",
+    "cisco-umbrella",
+    "cloudflare",
+    "contabo",
+    "cpanel",
+    "d3",
+    "freestyle-sh",
+    "godaddy",
+    "google-cloud-dns",
+    "google-firebase",
+    "hathora",
+    "horizoniq",
+    "leaseweb",
+    "mcp360",
+    "nacos",
+    "ovh-cloud",
+    "quantcdn",
+    "render",
+    "sakura-internet",
+    "smithery-ai",
+    "spaceship",
+    "unstoppable-domains",
+    "whoisfreaks"
+   ],
+   "other": [
+    "apifreaks-api-hub-for-developers",
+    "apiverve",
+    "cloudflare",
+    "cpanel",
+    "domaintools",
+    "fly-io",
+    "infoblox",
+    "koyeb",
+    "microsoft-azure-private-link",
+    "openprovider",
+    "quantcdn",
+    "sakura-internet",
+    "unstoppable-domains",
+    "upsun"
+   ],
+   "PascalCase": [
+    "amazon-route53-resolver",
+    "cpanel",
+    "dnsfilter",
+    "sakura-internet"
+   ],
+   "kebab-case": [
+    "apifreaks-api-hub-for-developers",
+    "cloudflare",
+    "cpanel"
+   ]
+  },
+  "pagination_param": {
+   "limit": [
+    "apifreaks-api-hub-for-developers",
+    "apiverve",
+    "appwrite",
+    "automattic",
+    "bookmyhost",
+    "catchdoms",
+    "cisco-umbrella",
+    "cloudflare",
+    "contabo",
+    "cpanel",
+    "d3",
+    "dnsfilter",
+    "domaintools",
+    "domscan",
+    "edgegap",
+    "fly-io",
+    "freestyle-sh",
+    "godaddy",
+    "horizoniq",
+    "karma-domains",
+    "koyeb",
+    "leaseweb",
+    "monacloud",
+    "nimbusnexus",
+    "openprovider",
+    "ovh-cloud",
+    "quantcdn",
+    "render",
+    "sakura-internet",
+    "sevalla",
+    "shodan",
+    "smithery-ai",
+    "uchecker"
+   ],
+   "page": [
+    "apifreaks-api-hub-for-developers",
+    "automattic",
+    "bookmyhost",
+    "brewpage",
+    "bunny-net",
+    "catchdoms",
+    "cisco-umbrella",
+    "cloudflare",
+    "contabo",
+    "cpanel",
+    "dnsfilter",
+    "domaintools",
+    "edgegap",
+    "godaddy",
+    "hetzner",
+    "karma-domains",
+    "linode",
+    "sakura-internet",
+    "shodan",
+    "smithery-ai",
+    "uchecker",
+    "unstoppable-domains",
+    "upsun",
+    "whoisfreaks"
+   ],
+   "offset": [
+    "appwrite",
+    "automattic",
+    "bookmyhost",
+    "cisco-umbrella",
+    "cloudflare",
+    "cpanel",
+    "domaintools",
+    "domscan",
+    "freestyle-sh",
+    "godaddy",
+    "horizoniq",
+    "koyeb",
+    "leaseweb",
+    "monacloud",
+    "nimbusnexus",
+    "openprovider",
+    "ovh-cloud",
+    "quantcdn",
+    "sakura-internet",
+    "sevalla"
+   ],
+   "page_size": [
+    "bookmyhost",
+    "cloudflare",
+    "cpanel",
+    "domaintools",
+    "freestyle-sh",
+    "godaddy",
+    "karma-domains",
+    "linode",
+    "nacos",
+    "sakura-internet",
+    "smithery-ai",
+    "upsun"
+   ],
+   "cursor": [
+    "cisco-umbrella",
+    "cloudflare",
+    "d3",
+    "domscan",
+    "fly-io",
+    "quantcdn",
+    "render",
+    "sakura-internet",
+    "smithery-ai",
+    "spaceship",
+    "unstoppable-domains"
+   ],
+   "size": [
+    "apifreaks-api-hub-for-developers",
+    "apiverve",
+    "appwrite",
+    "bookmyhost",
+    "brewpage",
+    "cloudflare",
+    "contabo",
+    "mcp360",
+    "shodan"
+   ],
+   "count": [
+    "apifreaks-api-hub-for-developers",
+    "apiverve",
+    "bookmyhost",
+    "cloudflare",
+    "sakura-internet",
+    "shodan",
+    "uchecker",
+    "whoisfreaks"
+   ],
+   "start": [
+    "apiverve",
+    "cisco-umbrella",
+    "cloudflare",
+    "cpanel",
+    "freestyle-sh",
+    "hetzner",
+    "koyeb"
+   ],
+   "max_results": [
+    "amazon-amplify",
+    "amazon-route53-resolver",
+    "cloudflare",
+    "freestyle-sh",
+    "google-cloud-dns",
+    "infoblox"
+   ],
+   "page_token": [
+    "amazon-lightsail",
+    "cloudflare",
+    "freestyle-sh",
+    "godaddy",
+    "google-cloud-dns",
+    "whoisfreaks"
+   ],
+   "per_page": [
+    "bunny-net",
+    "catchdoms",
+    "cloudflare",
+    "hetzner",
+    "sakura-internet",
+    "unstoppable-domains"
+   ],
+   "after": [
+    "apifreaks-api-hub-for-developers",
+    "bookmyhost",
+    "cloudflare",
+    "domscan",
+    "whoisfreaks"
+   ],
+   "before": [
+    "apifreaks-api-hub-for-developers",
+    "bookmyhost",
+    "cloudflare",
+    "whoisfreaks"
+   ],
+   "skip": [
+    "domscan",
+    "shodan",
+    "spaceship"
+   ],
+   "next": [
+    "domaintools",
+    "sakura-internet"
+   ],
+   "top": [
+    "domscan"
+   ],
+   "starting_after": [
+    "unstoppable-domains"
+   ]
+  }
+ }
+}

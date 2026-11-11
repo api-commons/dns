@@ -1,0 +1,17 @@
+provider: upsun
+apis_io: https://apis.io/providers/upsun/
+context: dns
+generated: '2026-11-11'
+concepts:
+  domain:
+    path_segment:
+    - domains
+    properties:
+      name: name
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/upsun-openapi-original.json#DELETE /projects/{projectId}/domains/{domainId}
+    - openapi/_original/upsun-openapi-original.json#DELETE /projects/{projectId}/environments/{environmentId}/domains/{domainId}
+    - openapi/_original/upsun-openapi-original.json#GET /projects/{projectId}/domains
+    - openapi/_original/upsun-openapi-original.json#GET /projects/{projectId}/domains/{domainId}
+    - openapi/_original/upsun-openapi-original.json#GET /projects/{projectId}/environments/{environmentId}/domains

@@ -1,0 +1,20 @@
+provider: sakura-internet
+apis_io: https://apis.io/providers/sakura-internet/
+context: dns
+generated: '2026-11-11'
+concepts:
+  domain:
+    path_segment:
+    - domains
+    properties:
+      id: id
+      name: domainName
+      created_at: createdAt
+      updated_at: updatedAt
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/apigw-api.yaml#DELETE /domains/{domainId}
+    - openapi/_original/apigw-api.yaml#GET /domains
+    - openapi/_original/apigw-api.yaml#POST /domains
+    - openapi/_original/apigw-api.yaml#PUT /domains/{domainId}
+    - openapi/_original/sakura-internet-apigw-openapi.yml#DELETE /domains/{domainId}

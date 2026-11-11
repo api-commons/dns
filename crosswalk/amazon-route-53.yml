@@ -1,0 +1,13 @@
+provider: amazon-route-53
+apis_io: https://apis.io/providers/amazon-route-53/
+context: dns
+generated: '2026-11-11'
+concepts:
+  dns_record:
+    path_segment:
+    - rrset
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/amazon-route-53-openapi.yml#GET /2013-04-01/hostedzone/{Id}/rrset
+    - openapi/_original/amazon-route-53-openapi.yml#POST /2013-04-01/hostedzone/{Id}/rrset

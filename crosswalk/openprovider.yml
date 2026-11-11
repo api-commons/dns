@@ -1,0 +1,57 @@
+provider: openprovider
+apis_io: https://apis.io/providers/openprovider/
+context: dns
+generated: '2026-11-11'
+concepts:
+  domain:
+    path_segment:
+    - domains
+    properties:
+      id: id
+      name: domain_name
+      created_at: creation_date
+      status: status
+      type: type
+      expires_at:
+      - expiration_date
+      - renewal_date
+      nameservers: name_servers
+      auto_renew: autorenew
+      description: description
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/openprovider-openapi.json#DELETE /v1beta/domains/{id}
+    - openapi/_original/openprovider-openapi.json#DELETE /v1beta/spam-expert/domains/{domain_name}
+    - openapi/_original/openprovider-openapi.json#GET /v1beta/customers/verifications/emails/domains
+    - openapi/_original/openprovider-openapi.json#GET /v1beta/domains
+    - openapi/_original/openprovider-openapi.json#GET /v1beta/domains/{id}
+  zone:
+    path_segment:
+    - zones
+    properties:
+      id: id
+      name:
+      - name
+      - domain
+      created_at: creation_date
+      status: active
+      type: type
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/openprovider-openapi.json#DELETE /v1beta/dns/zones/{name}
+    - openapi/_original/openprovider-openapi.json#GET /v1beta/dns/zones
+    - openapi/_original/openprovider-openapi.json#GET /v1beta/dns/zones/{name}
+    - openapi/_original/openprovider-openapi.json#POST /v1beta/dns/zones
+    - openapi/_original/openprovider-openapi.json#PUT /v1beta/dns/zones/{name}
+  dns_record:
+    path_segment:
+    - records
+    properties:
+      name: name
+      type: type
+      ttl: ttl
+      priority: prio
+      created_at: creation_date
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/openprovider-openapi.json#GET /v1beta/dns/zones/{name}/records

@@ -1,0 +1,16 @@
+provider: amazon-amplify
+apis_io: https://apis.io/providers/amazon-amplify/
+context: dns
+generated: '2026-11-11'
+concepts:
+  domain:
+    path_segment:
+    - domains
+    properties:
+      name: domainName
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/amazon-amplify-api-openapi.yml#GET /apps/{appId}/domains
+    - openapi/_original/amazon-amplify-api-openapi.yml#POST /apps/{appId}/domains
+    - openapi/_original/amazon-amplify-openapi.yaml#GET /apps/{appId}/domains
+    - openapi/_original/amazon-amplify-openapi.yaml#POST /apps/{appId}/domains

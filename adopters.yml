@@ -1,0 +1,163 @@
+context: dns
+generated: '2026-11-11'
+adopters:
+- provider: 10web
+  apis_io: https://apis.io/providers/10web/
+  crosswalk: crosswalk/10web.yml
+  concepts:
+  - dns_record
+  - zone
+- provider: amazon-amplify
+  apis_io: https://apis.io/providers/amazon-amplify/
+  crosswalk: crosswalk/amazon-amplify.yml
+  concepts:
+  - domain
+- provider: amazon-route-53
+  apis_io: https://apis.io/providers/amazon-route-53/
+  crosswalk: crosswalk/amazon-route-53.yml
+  concepts:
+  - dns_record
+- provider: appwrite
+  apis_io: https://apis.io/providers/appwrite/
+  crosswalk: crosswalk/appwrite.yml
+  concepts:
+  - dns_record
+  - domain
+  - zone
+- provider: bunny-net
+  apis_io: https://apis.io/providers/bunny-net/
+  crosswalk: crosswalk/bunny-net.yml
+  concepts:
+  - dns_record
+- provider: catchdoms
+  apis_io: https://apis.io/providers/catchdoms/
+  crosswalk: crosswalk/catchdoms.yml
+  concepts:
+  - domain
+- provider: cisco-umbrella
+  apis_io: https://apis.io/providers/cisco-umbrella/
+  crosswalk: crosswalk/cisco-umbrella.yml
+  concepts:
+  - domain
+- provider: cloudflare
+  apis_io: https://apis.io/providers/cloudflare/
+  crosswalk: crosswalk/cloudflare.yml
+  concepts:
+  - dns_record
+  - domain
+  - zone
+- provider: contabo
+  apis_io: https://apis.io/providers/contabo/
+  crosswalk: crosswalk/contabo.yml
+  concepts:
+  - dns_record
+  - domain
+  - zone
+- provider: domaintools
+  apis_io: https://apis.io/providers/domaintools/
+  crosswalk: crosswalk/domaintools.yml
+  concepts:
+  - domain
+- provider: freestyle-sh
+  apis_io: https://apis.io/providers/freestyle-sh/
+  crosswalk: crosswalk/freestyle-sh.yml
+  concepts:
+  - dns_record
+  - domain
+- provider: frostbyte
+  apis_io: https://apis.io/providers/frostbyte/
+  crosswalk: crosswalk/frostbyte.yml
+  concepts:
+  - dns_record
+  - domain
+- provider: gandi
+  apis_io: https://apis.io/providers/gandi/
+  crosswalk: crosswalk/gandi.yml
+  concepts:
+  - dns_record
+  - domain
+- provider: godaddy
+  apis_io: https://apis.io/providers/godaddy/
+  crosswalk: crosswalk/godaddy.yml
+  concepts:
+  - dns_record
+  - domain
+- provider: google-cloud-dns
+  apis_io: https://apis.io/providers/google-cloud-dns/
+  crosswalk: crosswalk/google-cloud-dns.yml
+  concepts:
+  - dns_record
+- provider: hetzner
+  apis_io: https://apis.io/providers/hetzner/
+  crosswalk: crosswalk/hetzner.yml
+  concepts:
+  - dns_record
+  - zone
+- provider: koyeb
+  apis_io: https://apis.io/providers/koyeb/
+  crosswalk: crosswalk/koyeb.yml
+  concepts:
+  - domain
+- provider: linode
+  apis_io: https://apis.io/providers/linode/
+  crosswalk: crosswalk/linode.yml
+  concepts:
+  - dns_record
+  - domain
+- provider: monacloud
+  apis_io: https://apis.io/providers/monacloud/
+  crosswalk: crosswalk/monacloud.yml
+  concepts:
+  - dns_record
+  - domain
+- provider: nimbusnexus
+  apis_io: https://apis.io/providers/nimbusnexus/
+  crosswalk: crosswalk/nimbusnexus.yml
+  concepts:
+  - dns_record
+  - domain
+  - zone
+- provider: openprovider
+  apis_io: https://apis.io/providers/openprovider/
+  crosswalk: crosswalk/openprovider.yml
+  concepts:
+  - dns_record
+  - domain
+  - zone
+- provider: quantcdn
+  apis_io: https://apis.io/providers/quantcdn/
+  crosswalk: crosswalk/quantcdn.yml
+  concepts:
+  - domain
+- provider: sakura-internet
+  apis_io: https://apis.io/providers/sakura-internet/
+  crosswalk: crosswalk/sakura-internet.yml
+  concepts:
+  - domain
+- provider: shodan
+  apis_io: https://apis.io/providers/shodan/
+  crosswalk: crosswalk/shodan.yml
+  concepts:
+  - domain
+- provider: smithery-ai
+  apis_io: https://apis.io/providers/smithery-ai/
+  crosswalk: crosswalk/smithery-ai.yml
+  concepts:
+  - domain
+- provider: spaceship
+  apis_io: https://apis.io/providers/spaceship/
+  crosswalk: crosswalk/spaceship.yml
+  concepts:
+  - dns_record
+  - domain
+- provider: unstoppable-domains
+  apis_io: https://apis.io/providers/unstoppable-domains/
+  crosswalk: crosswalk/unstoppable-domains.yml
+  concepts:
+  - dns_record
+  - domain
+- provider: upsun
+  apis_io: https://apis.io/providers/upsun/
+  crosswalk: crosswalk/upsun.yml
+  concepts:
+  - domain

@@ -1,0 +1,17 @@
+provider: google-cloud-dns
+apis_io: https://apis.io/providers/google-cloud-dns/
+context: dns
+generated: '2026-11-11'
+concepts:
+  dns_record:
+    path_segment:
+    - rrsets
+    properties:
+      name: name
+      type: type
+      ttl: ttl
+      content: rrdatas
+    core_coverage: 0.6
+    evidence:
+    - openapi/_original/dns-openapi.yml#GET /projects/{project}/managedZones/{managedZone}/rrsets
+    - openapi/_original/dns-openapi.yml#POST /projects/{project}/managedZones/{managedZone}/rrsets

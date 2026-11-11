@@ -1,0 +1,43 @@
+provider: linode
+apis_io: https://apis.io/providers/linode/
+context: dns
+generated: '2026-11-11'
+concepts:
+  domain:
+    path_segment:
+    - domains
+    properties:
+      id: id
+      created_at: created
+      status: status
+      updated_at: updated
+      type: type
+      description: description
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/linode-api-v4-official-openapi.json#DELETE /{apiVersion}/domains/{domainId}
+    - openapi/_original/linode-api-v4-official-openapi.json#GET /{apiVersion}/domains
+    - openapi/_original/linode-api-v4-official-openapi.json#GET /{apiVersion}/domains/{domainId}
+    - openapi/_original/linode-api-v4-official-openapi.json#POST /{apiVersion}/domains
+    - openapi/_original/linode-api-v4-official-openapi.json#PUT /{apiVersion}/domains/{domainId}
+  dns_record:
+    path_segment:
+    - records
+    properties:
+      name: name
+      type: type
+      id: id
+      priority: priority
+      port: port
+      weight: weight
+      content: target
+      created_at: created
+      tag: tag
+      updated_at: updated
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/linode-api-v4-official-openapi.json#DELETE /{apiVersion}/domains/{domainId}/records/{recordId}
+    - openapi/_original/linode-api-v4-official-openapi.json#GET /{apiVersion}/domains/{domainId}/records
+    - openapi/_original/linode-api-v4-official-openapi.json#GET /{apiVersion}/domains/{domainId}/records/{recordId}
+    - openapi/_original/linode-api-v4-official-openapi.json#POST /{apiVersion}/domains/{domainId}/records
+    - openapi/_original/linode-api-v4-official-openapi.json#PUT /{apiVersion}/domains/{domainId}/records/{recordId}

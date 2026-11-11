@@ -1,0 +1,156 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/dns/main/schema/dns_record.json",
+  "title": "Dns Record",
+  "description": "The common dns_record in DNS and Domains, distilled from 15 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 1.0,
+      "x-commons-providers": 15,
+      "x-commons-spellings": [
+        "name",
+        "domain",
+        "Name"
+      ]
+    },
+    "type": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 1.0,
+      "x-commons-providers": 15,
+      "x-commons-spellings": [
+        "type",
+        "Type",
+        "kind",
+        "@type"
+      ]
+    },
+    "ttl": {
+      "type": "integer",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.933,
+      "x-commons-providers": 14,
+      "x-commons-spellings": [
+        "ttl",
+        "Ttl"
+      ]
+    },
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.667,
+      "x-commons-providers": 10,
+      "x-commons-spellings": [
+        "id",
+        "zone_id",
+        "recordId",
+        "$id",
+        "Id"
+      ]
+    },
+    "priority": {
+      "type": "integer",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.667,
+      "x-commons-providers": 10,
+      "x-commons-spellings": [
+        "priority",
+        "prio",
+        "Priority"
+      ]
+    },
+    "port": {
+      "type": "integer",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.4,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "port",
+        "Port"
+      ]
+    },
+    "weight": {
+      "type": "integer",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.4,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "weight",
+        "Weight"
+      ]
+    },
+    "content": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.333,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "content",
+        "rrdatas",
+        "target",
+        "address",
+        "values"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.333,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "$createdAt",
+        "created_on",
+        "created",
+        "created_at",
+        "creation_date"
+      ],
+      "format": "date-time"
+    },
+    "tag": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.267,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "tag",
+        "Tag"
+      ]
+    },
+    "updated_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.267,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "$updatedAt",
+        "modified_on",
+        "updated",
+        "updated_at"
+      ],
+      "format": "date-time"
+    },
+    "comment": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.2,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "comment"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "dns",
+    "concept": "dns_record",
+    "providers": 15,
+    "generated": "2026-11-11",
+    "version": "0.1.0-draft.20261111",
+    "status": "draft"
+  }
+}

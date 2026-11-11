@@ -1,0 +1,22 @@
+provider: frostbyte
+apis_io: https://apis.io/providers/frostbyte/
+context: dns
+generated: '2026-11-11'
+concepts:
+  domain:
+    path_segment:
+    - domains
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/frostbyte-agent-gateway-openapi.yml#GET /v1/frostbyte-domains/v1/domains
+  dns_record:
+    path_segment:
+    - records
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/frostbyte-agent-gateway-openapi.yml#DELETE /v1/frostbyte-domains/v1/dns/records/{id}
+    - openapi/_original/frostbyte-agent-gateway-openapi.yml#GET /v1/frostbyte-domains/v1/dns/records
+    - openapi/_original/frostbyte-agent-gateway-openapi.yml#POST /v1/frostbyte-domains/v1/dns/records
+    - openapi/_original/frostbyte-agent-gateway-openapi.yml#PUT /v1/frostbyte-domains/v1/dns/records/{id}

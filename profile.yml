@@ -1,0 +1,539 @@
+context: dns
+name: DNS and Domains
+generated: '2026-11-11'
+version: 0.1.0-draft.20261111
+status: draft
+cohort:
+  tags:
+  - DNS
+  - Domains
+  - Domain Registration
+  - Domain Names
+  - Registrar
+  - Domain Management
+  - Hosting
+  providers_with_harvested_openapi: 69
+thresholds:
+  core: 0.5
+  extended: 0.2
+  min_providers: 3
+excluded: {}
+duplicates: {}
+shared_specs: {}
+concepts:
+  domain:
+    segments_seen:
+      domains: 21
+      domain: 4
+      registrations: 2
+    providers_exposing: 23
+    providers_with_readable_schema: 20
+    operations:
+    - operation: GET collection
+      providers: 20
+      share: 0.87
+      tier: core
+    - operation: GET item
+      providers: 16
+      share: 0.696
+      tier: core
+    - operation: POST collection
+      providers: 16
+      share: 0.696
+      tier: core
+    - operation: DELETE item
+      providers: 12
+      share: 0.522
+      tier: core
+    - operation: UPDATE item
+      providers: 12
+      share: 0.522
+      tier: core
+    - operation: UPDATE collection
+      providers: 3
+      share: 0.13
+      tier: long-tail
+    - operation: DELETE collection
+      providers: 2
+      share: 0.087
+      tier: long-tail
+    - operation: POST item
+      providers: 1
+      share: 0.043
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 14
+      share: 0.7
+      type: string
+      spellings:
+      - id
+      - zone_id
+      - domain_id
+      - $id
+      - domainId
+    - name: name
+      tier: core
+      providers: 14
+      share: 0.7
+      type: string
+      spellings:
+      - name
+      - hostname
+      - domain_name
+      - domainName
+      - host
+    - name: created_at
+      tier: core
+      providers: 11
+      share: 0.55
+      type: string
+      spellings:
+      - created_at
+      - createdAt
+      - $createdAt
+      - created_on
+      - created
+      - creation_date
+    - name: status
+      tier: extended
+      providers: 9
+      share: 0.45
+      type: string
+      spellings:
+      - status
+      - state
+    - name: updated_at
+      tier: extended
+      providers: 8
+      share: 0.4
+      type: string
+      spellings:
+      - updated_at
+      - updatedAt
+      - $updatedAt
+      - last_modified
+      - modified_at
+      - modifiedAt
+      - updated
+    - name: type
+      tier: extended
+      providers: 7
+      share: 0.35
+      type: string
+      spellings:
+      - type
+      - '@type'
+    - name: expires_at
+      tier: extended
+      providers: 6
+      share: 0.3
+      type: string
+      spellings:
+      - expires_at
+      - renewalDate
+      - expires
+      - expiresAt
+      - expiration_date
+      - renewal_date
+      - expirationDate
+    - name: nameservers
+      tier: extended
+      providers: 6
+      share: 0.3
+      type: array
+      spellings:
+      - nameservers
+      - name_servers
+      - nameServers
+    - name: auto_renew
+      tier: extended
+      providers: 5
+      share: 0.25
+      type: boolean
+      spellings:
+      - autoRenewal
+      - auto_renew
+      - renewAuto
+      - autorenew
+      - autoRenew
+    - name: description
+      tier: extended
+      providers: 4
+      share: 0.2
+      type: string
+      spellings:
+      - description
+    long_tail_count: 339
+    long_tail_sample:
+    - contacts
+    - deleted_at
+    - locked
+    - price
+    - renewal
+    - years
+    - app_id
+    - auth_code
+    - content_categories
+    - dnssec_keys
+    - is_premium
+    - messages
+    - metadata
+    - owner
+    - period
+    - records
+    - registrar
+    - registration_date
+    - registry_statuses
+    - source
+    - subdomain
+    - abuse_details
+    - accept_eap_fee
+    - accept_premium_fee
+    - accept_update_fee
+    - account_id
+    - acknowledgements
+    - actions
+    - activation_date
+    - active_date
+    - additional_data
+    - additional_information
+    - admin_handle
+    - age
+    - aliases
+    - allowed_delivery_modes
+    - api_history
+    - app_name
+    - app_partner
+    - app_version
+  zone:
+    segments_seen:
+      zones: 5
+      zone: 2
+    providers_exposing: 7
+    providers_with_readable_schema: 7
+    operations:
+    - operation: GET collection
+      providers: 7
+      share: 1.0
+      tier: core
+    - operation: DELETE item
+      providers: 5
+      share: 0.714
+      tier: core
+    - operation: GET item
+      providers: 5
+      share: 0.714
+      tier: core
+    - operation: POST collection
+      providers: 5
+      share: 0.714
+      tier: core
+    - operation: UPDATE item
+      providers: 4
+      share: 0.571
+      tier: core
+    - operation: UPDATE collection
+      providers: 1
+      share: 0.143
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 6
+      share: 0.857
+      type: integer
+      spellings:
+      - id
+      - $id
+    - name: name
+      tier: core
+      providers: 6
+      share: 0.857
+      type: string
+      spellings:
+      - name
+      - domain
+    - name: created_at
+      tier: core
+      providers: 5
+      share: 0.714
+      type: string
+      spellings:
+      - $createdAt
+      - created_on
+      - created
+      - created_at
+      - creation_date
+    - name: status
+      tier: core
+      providers: 4
+      share: 0.571
+      type: boolean
+      spellings:
+      - status
+      - active
+      - paused
+    - name: nameservers
+      tier: extended
+      providers: 3
+      share: 0.429
+      type: string
+      spellings:
+      - nameservers
+      - name_servers
+    - name: type
+      tier: extended
+      providers: 3
+      share: 0.429
+      type: string
+      spellings:
+      - type
+    - name: updated_at
+      tier: extended
+      providers: 3
+      share: 0.429
+      type: string
+      spellings:
+      - $updatedAt
+      - modified_on
+      - updated_at
+    long_tail_count: 68
+    long_tail_sample:
+    - metadata
+    - registrar
+    - ttl
+    - account
+    - action
+    - activated_on
+    - admin_domain
+    - admin_project
+    - authoritative_nameservers
+    - auto_renewal
+    - cname_suffix
+    - command
+    - content
+    - customer_id
+    - description
+    - development_mode
+    - dns_records
+    - dnskey
+    - email
+    - error
+    - expire
+    - finished
+    - history
+    - ip
+    - is_deleted
+    - is_shadow
+    - is_spamexperts_enabled
+    - master_ip
+    - masters
+    - messages
+    - mode
+    - modification_date
+    - original_dnshost
+    - original_name_servers
+    - original_registrar
+    - owner
+    - permissions
+    - plan
+    - pool_id
+    - premium_dns
+  dns_record:
+    segments_seen:
+      records: 14
+      rrsets: 2
+      rrset: 1
+      dns_records: 1
+      dns-records: 1
+      recordsets: 1
+    providers_exposing: 18
+    providers_with_readable_schema: 15
+    operations:
+    - operation: GET collection
+      providers: 16
+      share: 0.889
+      tier: core
+    - operation: POST collection
+      providers: 14
+      share: 0.778
+      tier: core
+    - operation: DELETE item
+      providers: 11
+      share: 0.611
+      tier: core
+    - operation: UPDATE item
+      providers: 9
+      share: 0.5
+      tier: core
+    - operation: GET item
+      providers: 6
+      share: 0.333
+      tier: extended
+    - operation: DELETE collection
+      providers: 3
+      share: 0.167
+      tier: long-tail
+    - operation: POST item
+      providers: 2
+      share: 0.111
+      tier: long-tail
+    - operation: UPDATE collection
+      providers: 2
+      share: 0.111
+      tier: long-tail
+    properties:
+    - name: name
+      tier: core
+      providers: 15
+      share: 1.0
+      type: string
+      spellings:
+      - name
+      - domain
+      - Name
+    - name: type
+      tier: core
+      providers: 15
+      share: 1.0
+      type: string
+      spellings:
+      - type
+      - Type
+      - kind
+      - '@type'
+    - name: ttl
+      tier: core
+      providers: 14
+      share: 0.933
+      type: integer
+      spellings:
+      - ttl
+      - Ttl
+    - name: id
+      tier: core
+      providers: 10
+      share: 0.667
+      type: string
+      spellings:
+      - id
+      - zone_id
+      - recordId
+      - $id
+      - Id
+    - name: priority
+      tier: core
+      providers: 10
+      share: 0.667
+      type: integer
+      spellings:
+      - priority
+      - prio
+      - Priority
+    - name: port
+      tier: extended
+      providers: 6
+      share: 0.4
+      type: integer
+      spellings:
+      - port
+      - Port
+    - name: weight
+      tier: extended
+      providers: 6
+      share: 0.4
+      type: integer
+      spellings:
+      - weight
+      - Weight
+    - name: content
+      tier: extended
+      providers: 5
+      share: 0.333
+      type: string
+      spellings:
+      - content
+      - rrdatas
+      - target
+      - address
+      - values
+    - name: created_at
+      tier: extended
+      providers: 5
+      share: 0.333
+      type: string
+      spellings:
+      - $createdAt
+      - created_on
+      - created
+      - created_at
+      - creation_date
+    - name: tag
+      tier: extended
+      providers: 4
+      share: 0.267
+      type: string
+      spellings:
+      - tag
+      - Tag
+    - name: updated_at
+      tier: extended
+      providers: 4
+      share: 0.267
+      type: string
+      spellings:
+      - $updatedAt
+      - modified_on
+      - updated
+      - updated_at
+    - name: comment
+      tier: extended
+      providers: 3
+      share: 0.2
+      type: string
+      spellings:
+      - comment
+    long_tail_count: 46
+    long_tail_sample:
+    - action
+    - flag
+    - metadata
+    - protocol
+    - service
+    - status
+    - zone_name
+    - accelerated
+    - accelerated_pull_zone_id
+    - comment_modified_on
+    - customer_id
+    - deletes
+    - description
+    - disabled
+    - failed_ids
+    - flags
+    - force_compatibility
+    - group
+    - ip
+    - lock
+    - locked
+    - managed
+    - messages
+    - modification_date
+    - operation
+    - pages
+    - patches
+    - posts
+    - private_routing
+    - project_id
+    - protection
+    - proxiable
+    - proxied
+    - ptrdname
+    - puts
+    - readonly
+    - record_ids
+    - settings
+    - signature_rrdatas
+    - sub_name

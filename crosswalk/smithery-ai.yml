@@ -1,0 +1,18 @@
+provider: smithery-ai
+apis_io: https://apis.io/providers/smithery-ai/
+context: dns
+generated: '2026-11-11'
+concepts:
+  domain:
+    path_segment:
+    - domains
+    properties:
+      id: id
+      name: hostname
+      created_at: createdAt
+      updated_at: updatedAt
+      type: type
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/smithery-registry-api-openapi.yml#GET /servers/{qualifiedName}/domains
+    - openapi/_original/smithery-registry-api-openapi.yml#PATCH /servers/{qualifiedName}/domains/{domainId}
